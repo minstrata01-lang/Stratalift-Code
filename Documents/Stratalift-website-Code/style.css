@@ -131,9 +131,10 @@ nav li a:hover{
 /* gambar pada beranda */
 .picture-beranda{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 141px);
     line-height: 0;
+    overflow: hidden;
 }
 
 .picture-beranda .hero-picture{
@@ -259,32 +260,113 @@ section .hero-section{
 }
 
 .mitra{
+    position: relative;
     display: grid;
     justify-content: center;
     row-gap: 30px;
     margin: 50px 0;
     height: 300px;
+    width: 100%;
+}
+
+.mitra .judul-mitra{
+    display: flex;
+    justify-content: center;
 }
 
 .mitra h2{
     margin: 0;
-    width: 1100px;
+    width: max-content;
     text-align: center;
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
     color: #0F2C4C;
+    border-bottom: 2px solid #CF862A;
+}
+
+.mitra-slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .mitra-logo{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 
-.mitra-logo .logo{
+.mitra-logo .logo {
+    flex: 0 0 33.333%; 
+    max-width: 33.333%;
+    height: 100px;
+    object-fit: contain;
+    padding: 0 15px; 
+    box-sizing: border-box;
+    display: block; 
+}
+
+.mitra-logo .logo img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block;
+}
+
+.mitra-logo .logo1{
+    height: 102px;
+    width: 204px;
+}
+
+.mitra-logo .logo2{
+    height: 89px;
+    width: 90px;
+}
+
+.mitra-logo .logo3{
+    height: 63.16px;
+    width: 143px;
+}
+
+.mitra-logo .logo4{
+    height: 118px;
+    width: 118px;
+}
+
+.mitra-logo .logo5{
     height: 144px;
     width: 144px;
 }
 
+.panah-mitra{
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panah-mitra button{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    border-width: 0;
+    font-size: 25px;
+    color: var(--dark-blue-color);
+    opacity: 60;
+    z-index: 10;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.panah-mitra button:hover{
+    color: var(--orange-color);
+    font-size: 30px;
+}
 
 /* footer */
 footer{
@@ -324,3 +406,5 @@ footer{
     text-align: center;
     color: white;
 }
+
+

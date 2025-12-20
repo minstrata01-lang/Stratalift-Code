@@ -49,7 +49,7 @@ prev.onclick = function(){
     reloadSlider();
 }
 
-let refreshSlider = setInterval(() => {next.click()}, 3000)
+let refreshSlider = setInterval(() => {next.click()}, 5000);
 
 function reloadSlider(){
     let checkLeft = items[active].offsetLeft;
@@ -65,3 +65,69 @@ dots.forEach((li, key) => {
         reloadSlider();
     })
 })
+
+// slide mitra
+let listMitra = document.querySelector('.mitra-slider .mitra-logo');
+let nextMitra = document.querySelector('#nextMitra'); 
+let prevMitra = document.querySelector('#prevMitra');
+
+let isAnimating = false;
+
+function showSlider(type) {
+    let itemsMitra = document.querySelectorAll('.mitra-slider .mitra-logo .logo');
+    
+    if (itemsMitra.length === 0 || isAnimating) return;
+    isAnimating = true;
+
+    let itemWidth = itemsMitra[0].offsetWidth;
+
+    if (type === 'next') {
+        listMitra.style.transition = 'transform 0.5s ease-in-out';
+        listMitra.style.transform = `translateX(-${itemWidth}px)`;
+
+        setTimeout(() => {
+            listMitra.style.transition = 'none';
+            listMitra.appendChild(itemsMitra[0]); 
+            listMitra.style.transform = 'translateX(0)';
+            isAnimating = false;
+        }, 500);
+
+    } else {
+        listMitra.style.transition = 'none';
+        let lastItem = itemsMitra[itemsMitra.length - 1];
+        listMitra.prepend(lastItem);
+        
+        listMitra.style.transform = `translateX(-${itemWidth}px)`;
+
+        setTimeout(() => {
+            listMitra.style.transition = 'transform 0.5s ease-in-out';
+            listMitra.style.transform = 'translateX(0)';
+            setTimeout(() => {
+                isAnimating = false;
+            }, 500);
+        }, 20);
+    }
+}
+
+// Event Listener
+nextMitra.onclick = function() {
+    showSlider('next');
+    resetAutoSlide();
+}
+
+prevMitra.onclick = function() {
+    showSlider('prev');
+    resetAutoSlide();
+}
+
+// Auto Slide
+let refreshSliderMitra = setInterval(() => {
+    nextMitra.click();
+}, 5000);
+
+function resetAutoSlide() {
+    clearInterval(refreshSliderMitra);
+    refreshSliderMitra = setInterval(() => {
+        nextMitra.click();
+    }, 5000);
+}
