@@ -1,0 +1,410 @@
+:root {
+    --dark-blue-color : #0F2C4C;
+    --light-blue-color : #085984;
+    --orange-color : #CF862A;
+    --brown-color : #844208;
+    --white-color : #fff;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sen",sans-serif;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper ul{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* header */
+.header-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: black;
+    margin: 0;
+    padding-right: 50px;
+    height: 45px;;
+}
+
+/* header links */
+.header-links ul{
+    display: flex;
+    justify-content:flex-end;
+    margin: 0;
+    gap: 20px;
+}
+
+.header-links li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-links li a{
+    color: white;
+    font-size: 11px;
+}
+
+/* navigation bar (menu bar) */
+nav.sticky{
+    z-index: 1000;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    height: 70px;
+    box-shadow: 10px 0px 5px black ;
+}
+
+nav.sticky .logo{
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+nav{
+    width: 100%;
+    height: fit-content;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 210px;
+    transition:all 0.3s ease;
+}
+
+nav .logo{
+    width: 175px;
+    height: 76px;
+    transition: all 0.5s ease;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+nav li{
+    padding: 5px;  
+}
+
+nav li a{
+    color: black;
+    font-family: "Sen",sans-serif;
+    font-weight:bolder ;
+    transition: all 0.3s ease;
+}
+
+nav li a:hover{
+    color: var(--dark-blue-color);
+    text-decoration: underline solid var(--dark-blue-color) 2px;
+    text-underline-offset: 5px;
+}
+
+
+/* gambar pada beranda */
+.picture-beranda{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 141px);
+    line-height: 0;
+    overflow: hidden;
+}
+
+.picture-beranda .hero-picture{
+    position: absolute;
+    display: flex;
+    height: calc(100vh - 141px);
+    overflow: hidden;
+    width: max-content;
+}
+
+.hero-picture img{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.panah{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.panah button{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    border-width: 0;
+    font-size: 55px;
+    line-height: 60px;
+    color: white;
+    opacity: 60;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.panah button:hover{
+    color: var(--dark-blue-color);
+    font-size: 70px;
+}
+
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.aktif{
+    width: 30px;
+    color: var(--dark-blue-color);
+    background-color: var(--dark-blue-color);
+}
+
+/* hero description */
+.section-2{
+    border-bottom: 1px solid var(--light-blue-color);
+}
+
+
+section .hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0px;
+}
+
+.hero-section .right{
+    width: 409px;
+    color: #0F2C4C;
+}
+
+.right h1{
+    font-size: 40px;
+    font-weight: 850;
+}
+
+.hero-section .left{
+    width: 550px;
+    display: block;
+    justify-content: center;
+    color: #0F2C4C;
+}
+
+.hero-section .left:hover{
+    border: #0F2C4C;
+    border-width: 5px;
+}
+
+
+.left h1{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.left p{
+    font-size: 16px;
+}
+
+/* Mitra */
+.section-3{
+    border-bottom: 1px solid var(--dark-blue-color);
+}
+
+.mitra{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    row-gap: 30px;
+    margin: 50px 0;
+    height: 300px;
+    width: 100%;
+}
+
+.mitra .judul-mitra{
+    display: flex;
+    justify-content: center;
+}
+
+.mitra h2{
+    margin: 0;
+    width: max-content;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #0F2C4C;
+    border-bottom: 2px solid #CF862A;
+}
+
+.mitra-slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.mitra-logo{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.mitra-logo .logo {
+    flex: 0 0 33.333%; 
+    max-width: 33.333%;
+    height: 100px;
+    object-fit: contain;
+    padding: 0 15px; 
+    box-sizing: border-box;
+    display: block; 
+}
+
+.mitra-logo .logo img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block;
+}
+
+.mitra-logo .logo1{
+    height: 102px;
+    width: 204px;
+}
+
+.mitra-logo .logo2{
+    height: 89px;
+    width: 90px;
+}
+
+.mitra-logo .logo3{
+    height: 63.16px;
+    width: 143px;
+}
+
+.mitra-logo .logo4{
+    height: 118px;
+    width: 118px;
+}
+
+.mitra-logo .logo5{
+    height: 144px;
+    width: 144px;
+}
+
+.panah-mitra{
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panah-mitra button{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    border-width: 0;
+    font-size: 25px;
+    color: var(--dark-blue-color);
+    opacity: 60;
+    z-index: 10;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.panah-mitra button:hover{
+    color: var(--orange-color);
+    font-size: 30px;
+}
+
+/* footer */
+footer{
+    padding: 80px 0;
+    background-color: #0F2C4C;
+}
+
+.footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding: 20px;
+}
+
+.links ul{
+    padding: 0;
+    display: grid;
+    gap: 20px;
+}
+
+.links li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 11;
+}
+
+
+.copyright p{
+    margin: 20;
+    text-align: center;
+    color: white;
+}
+
+
