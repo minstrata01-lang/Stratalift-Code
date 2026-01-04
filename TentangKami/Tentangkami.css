@@ -144,7 +144,8 @@ nav ul{
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
+    padding: 0;
 }
 
 nav li{
@@ -618,6 +619,15 @@ footer{
 
     nav .logo{
         scale: 85%;
+    }
+
+    nav .judul-nav a, .drop-down .drop-down-head span {
+        font-size: 12px;
+    }
+
+    nav ul{
+        gap: 5px;
+        max-width: 600px;
     }
 
     .mobile-menu-container{
@@ -1140,6 +1150,29 @@ footer{
     .footer .logo-footer img {
         width: 100%;
         display: block;
+    }
+
+}
+
+@media(max-width: 330px){
+    .header-links .map {
+        max-width: 80px;
+    }
+
+    .core-value {
+        padding: 30px;
+        height: max-content;
+    }
+
+
+     .links ul{
+        max-width: 260px;
+    }
+
+    .footer .footer-links .links li a {
+        font-size: 10px;
+        text-align: left;
+        width: auto;
     }
 
 }

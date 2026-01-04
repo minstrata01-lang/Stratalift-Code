@@ -1109,6 +1109,10 @@ footer{
 }
 
 @media(max-width: 330px){
+        .header-links .map {
+        max-width: 80px;
+    }
+
     .gambar-container h2{
         font-size: 27px ;
         width: 200px;
