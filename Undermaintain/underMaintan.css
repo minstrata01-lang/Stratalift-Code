@@ -776,6 +776,10 @@ footer{
 }
 
 @media(max-width: 330px){
+    .header-links .map {
+        max-width: 80px;
+    }
+
     .links ul{
         max-width: 260px;
     }

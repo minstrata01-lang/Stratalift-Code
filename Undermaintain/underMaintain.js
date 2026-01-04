@@ -75,7 +75,6 @@ dropDownLayanan.addEventListener('click', function(e) {
     }
 })
 
-
 // drop down deskop
 const dropDownLayananDeskop = document.querySelector('.drop-down .drop-down-head');
 const menuDownLayananDeskop = document.querySelector('.drop-down .sub-menu');
