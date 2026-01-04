@@ -155,7 +155,7 @@ nav .drop-down-head .judul-nav{
 }
 
 
-nav .drop-down-head.dropAktif .judul-nav{
+nav .drop-down-head.dropAktifs .judul-nav{
     color: var(--dark-blue-color);
     text-decoration: underline solid var(--dark-blue-color) 2px;
     text-underline-offset: 5px;

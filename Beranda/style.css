@@ -144,7 +144,8 @@ nav ul{
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
+    padding: 0;
 }
 
 nav li{
@@ -393,7 +394,8 @@ section .hero-section{
 }
 
 .hero-section .right{
-    width: 409px;
+    width: 100%;
+    max-width: 409px;
     color: #0F2C4C;
 }
 
@@ -606,13 +608,22 @@ footer{
         scale: 85%;
     }
 
+    nav .judul-nav a, .drop-down .drop-down-head span {
+        font-size: 12px;
+    }
+
+    nav ul{
+        gap: 5px;
+        max-width: 600px;
+    }
+
     .mobile-menu-container{
         display: none;
     }
 
      /*Hero sectionn*/
     section .hero-section{
-        gap: 40px;
+        gap: 10px;
     }
 
      .hero-section .left{
@@ -622,7 +633,7 @@ footer{
 
      .hero-section .right{
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
      }
 
      footer{
@@ -1032,7 +1043,7 @@ footer{
     }
 
     .gambar-container h2{
-        font-size: 50px ;
+        font-size: 30px ;
         width: 300px;
     }
 
@@ -1042,7 +1053,11 @@ footer{
     }
 
     .hero-section .left h1{
-        font-size: 45px;
+        font-size: 40px;
+    }
+
+    .hero-section .left p{
+        font-size: 16px;
     }
 
     footer {
@@ -1089,6 +1104,36 @@ footer{
     .footer .logo-footer img {
         width: 100%;
         display: block;
+    }
+
+}
+
+@media(max-width: 330px){
+    .gambar-container h2{
+        font-size: 27px ;
+        width: 200px;
+    }
+
+    .hero-section .left h1{
+        font-size: 30px;
+    }
+
+    .hero-section .left p{
+        font-size: 12px;
+    }
+
+    .hero-section .right h1{
+        font-size: 30px;
+    }
+
+    .links ul{
+        max-width: 260px;
+    }
+
+    .footer .footer-links .links li a {
+        font-size: 10px;
+        text-align: left;
+        width: auto;
     }
 
 }
