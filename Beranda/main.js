@@ -194,6 +194,7 @@ dropDownLayanan.addEventListener('click', function(e) {
     }
 })
 
+// drop untuk deskop
 const dropDownLayananDeskop = document.querySelector('.drop-down .drop-down-head');
 const menuDownLayananDeskop = document.querySelector('.drop-down .sub-menu');
 const tombolIsiLayanan = document.querySelectorAll('.layanan-button');
