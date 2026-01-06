@@ -213,22 +213,24 @@ nav .drop-down-head.dropAktif .judul-nav{
 .drop-down .sub-menu{
     z-index: 100;
     width: max-content;
-    padding: 0 15px;
-    margin: 0;
-    background-color: #085984;
+    top: 250%;
+    left: -10%;
     position: absolute;
-    top: 200%;
-    border-radius: 5px;
-    max-height: 0;
-    overflow: hidden;
-    transition: .5s all ease-in-out;
+    max-height: fit-content;
 }
 
 .sub-menu .sub-menu-container{
-    width: 200px;
+    padding: 0 15px;
+    margin: 0;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: #085984;
     height: 220px;
     display: grid;
     justify-content: space-between;
+    overflow: hidden;
+    max-height: 0;
+    transition: .5s all ease-in-out;
 }
 
 .drop-down .sub-menu li{
@@ -237,24 +239,111 @@ nav .drop-down-head.dropAktif .judul-nav{
     align-items: center;
 }
 
-.drop-down .sub-menu a{
+.drop-down .sub-menu span{
     font-size: 13px;
     margin: 10px 0;
     color: #fff;
 }
 
-.drop-down .sub-menu a:hover{
-    font-size: 13px;
-    color: #fff;
+.drop-down .sub-menu span:hover{
     text-decoration: underline;
     text-decoration-color: #CF862A;
     text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
 }
 
-.drop-down .sub-menu.dropAktif{
+.drop-down .sub-menu.dropAktif .sub-menu-container{
     max-height: 500px;
     transition: 0.6s ease-in-out;
 }
+
+.sticky .drop-down .sub-menu{
+    top: 200%;
+}
+
+.sticky .drop-down .sub-menu.dropAktif{
+    top: 200%;
+}
+
+.layanan-button{
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+    border-style: none;
+    align-items: center;
+}
+
+.layanan-button svg{
+    rotate: -90deg;
+    transition: transform 0.3s ease-in-out, rotate 0.3s ease-in-out
+}
+
+.layanan-button svg.panah-aktif{
+    rotate: 90deg;
+    transition: transform 0.3s ease-in-out, rotate 0.3s ease-in-out
+}
+
+.layanan-button svg.panah-aktif path{
+    fill: #CF862A;
+}
+
+.layanan-button.slideAktif span{
+    color: #CF862A;
+    text-decoration: underline;
+    text-decoration-color: #CF862A;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+/* isi dari sub menu */
+.isi-sub-menu li a{
+    color: var(--white-color);
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.isi-sub-menu li a:hover{
+    color: var(--white-color);
+    font-size: 13px;
+    margin: 10px 0;
+    text-decoration: underline;
+    text-decoration-color: #CF862A;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+.isi-sub-menu .Soil, .isi-sub-menu .Geotechnical, .isi-sub-menu .Lifting{
+    z-index: 100;
+    height: fit-content;
+    position: absolute;
+    background-color: var(--dark-blue-color);
+    border-radius: 5px;
+    top: 0;
+    left: 103%;
+    width: fit-content;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+.isi-sub-menu li{
+    width: 260px;
+}
+
+.isi-sub-menu ul{
+    display: grid;
+}
+
+.isi-sub-menu.slideAktif .Soil,
+.isi-sub-menu.slideAktif .Geotechnical,
+.isi-sub-menu.slideAktif .Lifting{
+    padding: 0 30px;
+    opacity: 1;
+    transition: .3s  all ease-in-out;
+}
+
 
 /* gambar pada beranda */
 .picture-beranda{
