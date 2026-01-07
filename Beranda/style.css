@@ -299,16 +299,15 @@ nav .drop-down-head.dropAktif .judul-nav{
 }
 
 /* isi dari sub menu */
-.isi-sub-menu li a{
+.drop-down .sub-menu .isi-sub-menu li a{
     color: var(--white-color);
     font-size: 13px;
     margin: 10px 0;
+    width: 100%;
 }
 
-.isi-sub-menu li a:hover{
-    color: var(--white-color);
-    font-size: 13px;
-    margin: 10px 0;
+.drop-down .sub-menu .isi-sub-menu.slideAktif li a:hover{
+    z-index: 999;
     text-decoration: underline;
     text-decoration-color: #CF862A;
     text-decoration-thickness: 3px;
@@ -322,10 +321,12 @@ nav .drop-down-head.dropAktif .judul-nav{
     background-color: var(--dark-blue-color);
     border-radius: 5px;
     top: 0;
-    left: 103%;
+    left: 100%; 
     width: fit-content;
+    padding: 0 30px;
     opacity: 0;
-    transition: .3s all ease-in-out;
+    visibility: hidden; 
+    transition: 0.5s all ease;
 }
 
 .isi-sub-menu li{
@@ -339,11 +340,10 @@ nav .drop-down-head.dropAktif .judul-nav{
 .isi-sub-menu.slideAktif .Soil,
 .isi-sub-menu.slideAktif .Geotechnical,
 .isi-sub-menu.slideAktif .Lifting{
-    padding: 0 30px;
     opacity: 1;
-    transition: .3s  all ease-in-out;
+    visibility: visible;
+    left: 103%; 
 }
-
 
 /* gambar pada beranda */
 .picture-beranda{
@@ -745,6 +745,27 @@ footer{
      .copyright p{
         font-size: 10px;
      }
+
+    .layanan-button{
+        max-width: 200px;
+    }
+
+    .drop-down .sub-menu span{
+        font-size: 11px;
+    }
+
+    .isi-sub-menu .Soil, .isi-sub-menu .Geotechnical, .isi-sub-menu .Lifting {
+    width: 100%;
+    max-width: 250px;
+    }
+
+    .isi-sub-menu li a{
+        font-size: 10px;
+    }
+
+    .isi-sub-menu li {
+    width: 100%;
+    }
 }
 
 @media(max-width: 800px){
@@ -1052,6 +1073,7 @@ footer{
         max-height: 500px;
         transition: .4s all ease-in-out;
     }
+
 }
 
 @media(max-width: 450px){
