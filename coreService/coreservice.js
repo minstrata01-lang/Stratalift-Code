@@ -59,23 +59,62 @@ dropDownLayanan.addEventListener('click', function(e) {
     }
 })
 
-// drop down deskop
+// drop untuk deskop
 const dropDownLayananDeskop = document.querySelector('.drop-down .drop-down-head');
 const menuDownLayananDeskop = document.querySelector('.drop-down .sub-menu');
+const tombolIsiLayanan = document.querySelectorAll('.layanan-button');
+
+function tutupSemuaSubMenu() {
+    tombolIsiLayanan.forEach(btn => {
+        const subMenu = btn.nextElementSibling;
+        const icon = btn.querySelector('svg');
+        
+        btn.classList.remove('slideAktif'); 
+        if (subMenu) subMenu.classList.remove('slideAktif');
+        if (icon) icon.classList.remove('panah-aktif');
+        
+        btn.classList.remove('is-open');
+    });
+}
 
 dropDownLayananDeskop.addEventListener('click', function(e) {
     e.preventDefault();
-    dropDownLayananDeskop.classList.toggle('dropAktif');
+    
+    const akanMenutup = this.classList.contains('dropAktif');
+    
+    this.classList.toggle('dropAktif');
     menuDownLayananDeskop.classList.toggle('dropAktif');
 
-    const icon = this.querySelector('img');
-    if(menuDownLayananDeskop.classList.contains('dropAktif')){
-        icon.style.transform = 'rotate(180deg)';
+    const iconUtama = this.querySelector('img');
+    if (menuDownLayananDeskop.classList.contains('dropAktif')) {
+        iconUtama.style.transform = 'rotate(180deg)';
+    } else {
+        iconUtama.style.transform = 'rotate(0deg)';
     }
-    else{
-        icon.style.transform = 'rotate(0deg)';
+
+    if (akanMenutup) {
+        tutupSemuaSubMenu();
     }
-})
+});
+
+tombolIsiLayanan.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.stopPropagation(); 
+        
+        const subMenuSekarang = this.nextElementSibling;
+        const iconSekarang = this.querySelector('svg');
+        const sudahTerbuka = this.classList.contains('slideAktif');
+
+        tutupSemuaSubMenu();
+
+        if (!sudahTerbuka) {
+            this.classList.add('slideAktif');
+            if (subMenuSekarang) subMenuSekarang.classList.add('slideAktif');
+            if (iconSekarang) iconSekarang.classList.add('panah-aktif');
+            this.classList.add('is-open');
+        }
+    });
+});
 
 
 
