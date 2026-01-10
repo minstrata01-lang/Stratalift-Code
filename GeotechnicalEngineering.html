@@ -140,34 +140,38 @@
 
     <main>
         <div class="mobile-menu-container">
-            <ul>
-                        <li class="judul-nav">
-                            <a href="./index.html">Beranda</a>
-                        </li>
-                        <li class="judul-nav">
-                            <a href="./Tentang_kami.html"  class="active-nav">Tentang Kami</a>
-                        </li class="judul-nav">
-                        <li class="drop-down-mobile">
-                            <button class="drop-down-head">
-                                <span class="judul-nav">Layanan</span>
-                                <img src="../Elemen/Icon/arrow-down-s-line-white.svg" alt="">
-                            </button>
-                            <ul class="sub-menu-mobile">
-                                <li><a href="./underMaintan.html">Soil Investigation</a></li>
-                                <li><a href="./underMaintan.html">Geotechnical Engineering</a></li>
-                                <li><a href="./underMaintan.html">Lifting & Rigging Engineering</a></li>
-                            </ul>
-                        </li>
-                        <li class="judul-nav">
-                            <a href="./underMaintan.html">Catatan Kasus</a>
-                        </li>
-                        <li class="judul-nav">
-                            <a href="./underMaintan.html">Catatan Teknis</a>
-                        </li>
-                        <li class="judul-nav">
-                            <a href="./underMaintan.html">Kontak</a>
-                        </li>
-                    </ul>
+            <div id="main-panel" class="panel active">
+                <div class="menu-item">
+                    <a href="../index.html">Beranda</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../Tentang_kami.html">Tentang Kami</a>
+                </div>
+                <div class="menu-item" onclick="openL2('Layanan')">
+                    Layanan<span>&rsaquo;</span>
+                </div>
+                <div class="menu-item">
+                    <a href="../Tentang_kami.html">Catatan Pengalaman</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../Tentang_kami.html">Catatan Teknis</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../Tentang_kami.html">Kontak</a>
+                </div>
+            </div>
+        
+            <div id="sub-panel" class="panel">
+                <div class="back-btn" onclick="closeL2()">&lsaquo; Kembali</div>
+                <h2 id="title-l2">Pilih Kategori</h2> 
+                <div id="links-l2"></div>
+            </div>
+        
+            <div id="second-sub-panel" class="panel"> 
+                <div class="back-btn" onclick="closeL3()">&lsaquo; Kembali ke Layanan</div>
+                <h2 id="title-l3">Detail Layanan</h2> 
+                <div id="links-l3"></div>
+            </div>
         </div>
 <!-- akhir mobile navigation -->
 
