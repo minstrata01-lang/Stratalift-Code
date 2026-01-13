@@ -796,7 +796,7 @@ footer{
         background-color: #fff;
         top: 0;
         height: 70px;
-        box-shadow: 0px 0px 5px black ;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5) ;
         transition:all 0.3s ease;
     }
 
@@ -973,7 +973,6 @@ footer{
     }
 
     /* tambahan drop down event */
-    
     .mobile-menu-container{
         width: 100%;
         max-width: 768px;
@@ -1005,7 +1004,6 @@ footer{
         transition:all 0.3s ease;
         max-height: 1000px;
         transition: max-height .4s all ease-in-out;
-
     }
 
     /* CONTAINER UTAMA (Pintu Luar) */
