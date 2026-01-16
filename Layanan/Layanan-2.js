@@ -66,21 +66,21 @@ const menuData = {
     'geo_sub' : {
         title : 'Geotechnical Engineering',
         items: [
-            {text: 'Slope Stability Anlaysis', url: 'Geo_eng.html?id=slope'},
-            {text: 'Ground Analysis', url: 'Geo_eng.html?id=ground'},
-            {text: 'Soft Ground Anlaysiis', url: 'Geo_eng.html?id=soft-ground'},
-            {text: 'Foundation Analysis', url: 'Geo_eng.html?id=foundation'}
+            {text: 'Slope Stability Anlaysis', url: '../Geo_engineer/Geo_eng.html?id=slope'},
+            {text: 'Ground Analysis', url: '../Geo_engineer/Geo_eng.html?id=ground'},
+            {text: 'Soft Ground Anlaysiis', url: '../Geo_engineer/Geo_eng.html?id=soft-ground'},
+            {text: 'Foundation Analysis', url: '../Geo_engineer/Geo_eng.html?id=foundation'}
         ]
     },
     'lift_sub' : {
         title : 'Lifting and Rigging Engineering',
         items : [
-            { text: 'Lifting Management System', url: '../Lifting_Ringging/Lifting.html?id=lifting_man'},
-            { text: 'Lifting Operation Plan', url: '../Lifting_Ringging/Lifting.html?id=lifting_op'},
-            { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=lifting_eq_de'},
-            { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=lifting_eq_ins'},
-            { text: 'Residual Life Assessment', url: '../Lifting_Ringging/Lifting.html?id=residual'},
-            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'}
+            { text: 'Lifting Management System', url: 'Lifting.html?id=manage'},
+            { text: 'Lifting Operation Plan', url: 'Lifting.html?id=operration'},
+            { text: 'Lifting Equipment Design', url: 'Lifting.html?id=design'},
+            { text: 'Lifting Equipment Inspection', url: 'Lifting.html?id=inspection'},
+            { text: 'Residual Life Assessment', url: 'Lifting.html?id=residual'},
+            { text: 'Training', url: 'Lifting.html?id=training'},
         ]
     }
 
@@ -219,91 +219,101 @@ tombolIsiLayanan.forEach(button => {
 // Tambahan untuk layanan
 // 1. Data Konten Semua Layanan
 const dataLayanan = {
-    "slope": {
-        category: "Soil InvestigationGeotechnical Engineering",
-        title: "Slope Stability Analysis",
+    "manage": {
+        category: "Lifting & Rigging Engineering ",
+        title: "Lifting Management System",
         description: `
-            <p><strong>Slope Stability Analysis</strong> merupakan layanan rekayasa geoteknik yang bertujuan untuk mengevaluasi tingkat keamanan dan kestabilan lereng alami maupun lereng buatan terhadap potensi longsor. Analisis ini sangat penting pada area perbukitan, galian (cut slope), timbunan (fill slope), serta lereng di sekitar bangunan, jalan, tangki, dan infrastruktur kritis lainnya, khususnya pada wilayah dengan kondisi tanah kompleks dan pengaruh air tanah yang signifikan.</p>
-            <p>Analisis stabilitas lereng dilakukan dengan mengintegrasikan data investigasi lapangan, hasil pengujian laboratorium, serta kondisi geometri dan lingkungan lereng. Parameter tanah yang representatif digunakan untuk mengevaluasi potensi bidang gelincir dan menghitung <strong>faktor keamanan (safety factor)</strong> terhadap berbagai kondisi pembebanan, baik kondisi statis, pengaruh muka air tanah, maupun kondisi dinamis seperti gempa. Evaluasi dilakukan menggunakan metode analisis yang telah teruji, baik metode kesetimbangan batas maupun pemodelan numerik, sehingga hasil analisis mampu merepresentasikan perilaku lereng secara realistis.</p>
-            <p>Hasil analisis tidak hanya digunakan untuk menilai kondisi eksisting, tetapi juga sebagai dasar dalam merancang solusi perkuatan lereng yang efektif dan efisien, seperti perubahan geometri lereng, sistem drainase, perkuatan struktural, atau kombinasi metode stabilisasi lainnya. Seluruh rekomendasi disusun secara aplikatif dengan mempertimbangkan aspek keselamatan, konstruktabilitas, dan keberlanjutan jangka panjang.</p>
-            <p>Pelaksanaan analisis stabilitas lereng mengacu pada standar dan pedoman yang berlaku, antara lain:</p>
+            <p><strong>Lifting Management System</strong> adalah pendekatan sistematis untuk memastikan seluruh aktivitas pengangkatan beban dilakukan secara <strong>aman, terkontrol, dan sesuai standar internasional</strong>. Sistem ini mengintegrasikan aspek <strong>engineering, operasional, dan keselamatan kerja</strong> ke dalam satu kerangka kerja yang terstruktur.</p>
+            <p>Layanan kami mencakup penyusunan <strong>kebijakan dan prosedur lifting</strong>, klasifikasi tingkat risiko (basic, standard, critical lift), pengendalian kompetensi personel, hingga verifikasi dokumen teknis seperti <strong>lifting plan, rigging study, dan risk assessment</strong>. Dengan Lifting Management System yang tepat, potensi kecelakaan, kegagalan alat, dan downtime proyek dapat diminimalkan secara signifikan.</p>
         `,
         // Pastikan selalu gunakan Array [] dan forward slash /
         images: [
-            "../Elemen/Gambar/Lifting_and_Rigging/slop(1).webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/slop(2).webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/slop(3).webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/slop(4).webp",
+            "../Elemen/Gambar/Geotechnical/manage-1.webp",
         ],
         sni: [
-            { judul: "SNI 8460:2017 ", isi: "Persyaratan Perancangan Geoteknik" },
-            { judul: "FHWA NHI-14-007 ", isi: "Slope Stability Reference Guide" },
-            { judul: "Pedoman dan praktik umum analisis stabilitas lereng dalam rekayasa geoteknik", isi: " " }
+            
         ]
     },
-    "ground": {
-        category: "Soil InvestigationGeotechnical Engineering",
-        title: "Ground Analysis",
+    "operration": {
+        category: "Lifting & Rigging Engineering ",
+        title: "Lifting Operation Plan",
         description: `
-            <p><strong>Ground Analysis</strong> merupakan layanan rekayasa geoteknik yang bertujuan untuk mengevaluasi kondisi dan perilaku tanah sebagai media pendukung struktur. Analisis ini menjadi dasar utama dalam pengambilan keputusan desain pondasi, perkuatan tanah, serta penilaian risiko geoteknik seperti penurunan, daya dukung, dan deformasi tanah. Dengan pemahaman kondisi tanah yang menyeluruh, potensi permasalahan geoteknik dapat diidentifikasi sejak tahap awal perencanaan. </p>
-            <p>Pelaksanaan Ground Analysis dilakukan dengan mengintegrasikan data hasil investigasi lapangan, pengujian laboratorium, serta kondisi pembebanan dan lingkungan proyek. Parameter tanah dianalisis untuk menilai kapasitas dukung tanah, distribusi tegangan, perilaku deformasi, serta interaksi tanah–struktur. Evaluasi dilakukan untuk berbagai kondisi, baik jangka pendek maupun jangka panjang, sehingga hasil analisis dapat digunakan secara langsung dalam desain yang aman dan efisien. </p>
-            <p>Hasil Ground Analysis digunakan sebagai dasar dalam pemilihan jenis pondasi, penentuan kedalaman dan dimensi pondasi, serta evaluasi kebutuhan perbaikan tanah apabila diperlukan. Seluruh hasil disajikan dalam bentuk laporan teknis yang sistematis, dilengkapi dengan interpretasi yang jelas dan rekomendasi desain yang aplikatif sesuai kebutuhan proyek. </p>
-            <p>Pelaksanaan Ground Analysis mengacu pada standar dan pedoman yang berlaku, antara lain:</p>
+            <p><strong>Lifting Operation Plan</strong> adalah dokumen teknis yang menjabarkan secara rinci <strong>bagaimana suatu aktivitas pengangkatan beban akan dilaksanakan dengan aman dan terkendali</strong>. Dokumen ini menjadi acuan utama bagi seluruh pihak yang terlibat, mulai dari engineer, supervisor, hingga tim operasional di lapangan. </p>
+            <p>Lifting Operation Plan kami disusun berbasis <strong>engineering calculation dan risk-based approach</strong>, mencakup penentuan metode angkat, perhitungan beban (gross load & center of gravity), verifikasi kapasitas crane, desain dan pemilihan rigging, serta analisis kondisi tanah dan area kerja. Setiap rencana dilengkapi dengan <strong>risk assessment, sequence of work, lifting drawing, dan emergency consideration</strong>, serta mengacu pada standar internasional seperti <strong>BS 7121 dan ASME B30</strong>.</p>
+            <p>Dengan Lifting Operation Plan yang komprehensif, pelaksanaan lifting dapat dilakukan secara <strong>lebih aman, efisien, dan dapat dipertanggungjawabkan secara teknis</strong>, sekaligus meminimalkan risiko kecelakaan dan kegagalan peralatan.</p>
+            <p> </p>
         `,
         images: [
-            "../Elemen/Gambar/Lifting_and_Rigging/g-analis-1.webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/g-analis-2.webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/g-analis-3.webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/g-analis-4.webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/g-analis-5.webp"
+            "../Elemen/Gambar/Geotechnical/oper-1.webp",
+            "../Elemen/Gambar/Geotechnical/oper-2.webp",
+            "../Elemen/Gambar/Geotechnical/oper-3.webp",
         ],
         sni: [
-            { judul: "SNI 8460:2017 ", isi: "Persyaratan Perancangan Geoteknik"},
-            { judul: "Eurocode 7 (EN 1997)", isi: "Geotechnical Design"},
-            { judul: "Bowles, J.E.", isi: "Foundation Analysis and Design"},
-            { judul: "Pedoman dan praktik umum analisis tanah dalam rekayasa geoteknik", isi: ""}
+            
+        ]
+
+    },
+    "design": {
+        category: "Lifting & Rigging Engineering",
+        title: "Lifting Equipment Design",
+        description: `
+            <p>Kami menyediakan layanan <strong>perancangan peralatan lifting khusus (engineered lifting devices) </strong> yang disesuaikan dengan kebutuhan proyek dan kondisi lapangan. Desain dilakukan berbasis perhitungan teknik, bukan asumsi, untuk memastikan <strong>kekuatan, stabilitas, dan faktor keselamatan </strong>terpenuhi.</p>
+            <p>Ruang lingkup desain meliputi <strong> spreader beam, lifting beam, pad eye, lug plate, temporary steel support, dan custom lifting frame</strong>. Seluruh desain divalidasi melalui analisis tegangan, defleksi, dan sambungan, serta mengacu pada standar internasional seperti ASME, BS 7121, dan DNV. Hasil desain siap digunakan untuk fabrikasi dan pelaksanaan lifting di lapangan.</p>
+        `,
+        images: [
+            "../Elemen/Gambar/Geotechnical/desain-1.webp",
+            "../Elemen/Gambar/Geotechnical/desain-2.webp",
+            "../Elemen/Gambar/Geotechnical/desain-3.webp",
+            "../Elemen/Gambar/Geotechnical/desain-4.webp",
+            "../Elemen/Gambar/Geotechnical/desain-5.webp"
+        ],
+        sni: [
+            
         ]
     },
-    "soft-ground": {
-        category: "Soil InvestigationGeotechnical Engineering",
-        title: "Soft Ground Analysis",
+    "inspection": {
+        category: "Lifting & Rigging Engineering ",
+        title: "Lifting Equipment Inspection ",
         description: `
-            <p><strong>Soft Ground Analysis</strong> merupakan layanan rekayasa geoteknik yang difokuskan pada evaluasi perilaku tanah lunak yang memiliki daya dukung rendah dan tingkat kompresibilitas tinggi. Kondisi tanah lunak sering dijumpai pada area rawa, pesisir, reklamasi, dan endapan aluvial, yang berpotensi menimbulkan permasalahan serius seperti penurunan berlebihan, ketidakstabilan, dan kegagalan struktur apabila tidak dianalisis secara tepat sejak tahap perencanaan.</p>
-            <p>Analisis tanah lunak dilakukan dengan mengintegrasikan data investigasi lapangan, hasil pengujian laboratorium, serta parameter konsolidasi tanah untuk mengevaluasi besarnya dan laju penurunan tanah akibat pembebanan. Evaluasi mencakup analisis penurunan primer dan sekunder, stabilitas selama dan pasca konstruksi, serta pengaruh beban bertahap terhadap kinerja tanah. Analisis ini menjadi dasar dalam menentukan kelayakan desain dan strategi konstruksi yang aman pada tanah lunak.</p>
-            <p>Hasil Soft Ground Analysis digunakan untuk merumuskan rekomendasi teknis yang aplikatif, termasuk penentuan jenis pondasi yang sesuai, kebutuhan perbaikan tanah, metode percepatan konsolidasi, serta pengendalian risiko selama pelaksanaan konstruksi. Seluruh hasil analisis disajikan secara sistematis dan mudah dipahami, sehingga dapat digunakan sebagai dasar pengambilan keputusan oleh pemilik proyek, konsultan, maupun kontraktor.</p>
-            <p>Pelaksanaan Soft Ground Analysis mengacu pada standar dan pedoman yang berlaku, antara lain:</p>
+            <p>Lifting Equipment Inspection bertujuan untuk memastikan seluruh peralatan angkat berada dalam kondisi <strong>layak operasi dan aman digunakan</strong>. Inspeksi dilakukan secara sistematis untuk mengidentifikasi potensi cacat, degradasi material, maupun ketidaksesuaian terhadap standar keselamatan.</p>
+            <p>Layanan inspeksi kami meliputi <strong>visual inspection, dimensional check, load identification, serta Non-Destructive Test (NDT)</strong> seperti magnetic particle atau ultrasonic test bila diperlukan. Inspeksi dilakukan pada sling, shackle, lifting beam, pad eye, hingga aksesoris rigging lainnya, disertai laporan teknis dan rekomendasi kelayakan penggunaan.</p>
         `,
         images: [
-            "../Elemen/Gambar/Lifting_and_Rigging/soft(1).webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/soft(2).webp"
+            "../Elemen/Gambar/Geotechnical/insp-1.webp",
+            "../Elemen/Gambar/Geotechnical/insp-2.webp",
+            "../Elemen/Gambar/Geotechnical/insp-3.webp"
         ],
         sni: [
-            { judul: "•	SNI 8460;2017 ", isi: "Persyaratan Perancangan Geoteknik" },
-            { judul: "•	Terzaghi, Peck & Mesri ", isi: "Geotechnical Design" },
-            { judul: "•	Terzaghi, Peck & Mesri ", isi: "Soil Mechanics in Engineering Practice" },
-            { judul: "•	Pedoman dan praktik umum analisis tanah lunak dalam rekayasa geoteknik", isi: " " }
+            
         ]
     },
-    "foundation": {
-        category: "Soil InvestigationGeotechnical Engineering",
-        title: "Foundation Analysis ",
+    "residual": {
+        category: "Lifting & Rigging Engineering ",
+        title: "Residual Life Assessment",
         description: `
-            <p><strong>Foundation Analysis</strong> merupakan layanan rekayasa geoteknik yang bertujuan untuk memastikan pondasi mampu menyalurkan beban struktur ke tanah secara aman dan terkendali. Analisis ini menjadi tahapan krusial dalam perencanaan bangunan, infrastruktur, dan fasilitas industri, karena kegagalan pondasi dapat berdampak langsung terhadap keselamatan struktur dan operasional jangka panjang.</p>
-            <p>Analisis pondasi dilakukan dengan mengintegrasikan data investigasi tanah, hasil pengujian laboratorium, serta karakteristik beban dan tipe struktur yang akan didukung. Evaluasi mencakup analisis daya <strong>dukung tanah, penurunan (settlement)</strong>, serta interaksi tanah–struktur untuk berbagai jenis pondasi, baik <strong>pondasi dangkal</strrong> maupun <strong>pondasi dalam</strong>. Analisis dilakukan untuk kondisi jangka pendek dan jangka panjang, termasuk pengaruh muka air tanah, konsolidasi, serta beban dinamis apabila diperlukan. </p>
-            <p>Hasil Foundation Analysis digunakan sebagai dasar dalam menentukan jenis pondasi yang paling sesuai, dimensi pondasi, kedalaman penanaman, serta kebutuhan perkuatan atau perbaikan tanah apabila kondisi tanah eksisting tidak memenuhi persyaratan desain. Seluruh rekomendasi disusun secara aplikatif dengan mempertimbangkan aspek keselamatan, efisiensi konstruksi, serta keberlanjutan kinerja struktur selama masa layan.</p>
-            <p>Pelaksanaan Foundation Analysis mengacu pada standar dan pedoman yang berlaku, antara lain:</p>
+            <p>Residual Life Assessment (RLA) adalah kajian teknik untuk menentukan <strong>sisa umur pakai (residual life)</strong> peralatan lifting berdasarkan kondisi aktual, histori penggunaan, dan mekanisme degradasi material. Layanan ini berperan penting dalam memastikan peralatan tetap <strong>aman, andal, dan layak operasi</strong> sepanjang siklus hidupnya.</p>
+            <p>Analisis dilakukan melalui evaluasi <strong>beban kerja aktual, jumlah dan spektrum siklus lifting, kelelahan material (fatigue), korosi, serta hasil inspeksi dan Non-Destructive Test (NDT)</strong>. Pendekatan ini memungkinkan penilaian objektif terhadap tingkat risiko kegagalan, serta rekomendasi teknis apakah peralatan masih dapat digunakan, memerlukan perbaikan, atau harus dipensiunkan.</p>
+            <p>Dengan Residual Life Assessment, klien dapat mengambil keputusan berbasis <strong>engineering judgment</strong>, mengoptimalkan pemanfaatan aset, serta menghindari risiko keselamatan dan biaya tak terduga akibat kegagalan peralatan lifting. </p>
         `,
         images: [
-            "../Elemen/Gambar/Lifting_and_Rigging/foundation-1.webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/foundation-2.webp",
-            "../Elemen/Gambar/Lifting_and_Rigging/foundation-3.webp",
+            
         ],
         sni: [
-            { judul: "SNI 8460:2017 ", isi: "Persyaratan Perancangan Geoteknik" },
-            { judul: "SNI 1726 ", isi: "Tata cara perencanaan ketahanan gempa untuk struktur bangunan dan non-bangunan" },
-            { judul: "Eurocode 7 (EN 1997) ", isi: "Geotechnical Design" },
-            { judul: "Bowles, J.E. ", isi: "Foundation Analysis and Design" },
-            { judul: "Tomlinson & Woodward ", isi: "Pile Design and Construction Practice" }
+            
+        ]
+    },
+    "training": {
+        category: "Lifting & Rigging Engineering ",
+        title: "Training ",
+        description: `
+            <p>Kami menyediakan <strong>pelatihan lifting berbasis praktik engineering dan keselamatan kerja</strong>, dirancang untuk meningkatkan kompetensi personel yang terlibat dalam aktivitas pengangkatan beban. Pelatihan tidak hanya fokus pada prosedur, tetapi juga pemahaman <strong>prinsip teknis di balik lifting</strong>.</p>
+            <p>Materi pelatihan mencakup <strong>dasar-dasar lifting & rigging, interpretasi load chart crane, pengenalan peralatan lifting, risk assessment, hingga critical lifting operation</strong>. Program dapat disesuaikan untuk operator, rigger, supervisor, maupun engineer, dan disampaikan oleh praktisi berpengalaman di bidang lifting engineering.</p>
+        `,
+        images: [
+            
+        ],
+        sni: [
+        
         ]
     }
 };
@@ -315,7 +325,7 @@ let autoSlideTimer;
 
 function getServiceId() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('id') || 'slope';
+    return params.get('id') || 'manage';
 }
 
 function renderPage() {
