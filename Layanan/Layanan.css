@@ -309,6 +309,7 @@ nav .drop-down-head.dropAktifs .judul-nav{
     transition: 0.5s all ease;
 }
 
+
 .isi-sub-menu li{
     width: 260px;
 }
@@ -328,7 +329,7 @@ nav .drop-down-head.dropAktifs .judul-nav{
 /* footer */
 footer{
     padding: 80px 0;
-    background-color: #0F2C4C;
+    background: linear-gradient(90deg, rgba(8, 89, 132, 1) 0%, rgba(1, 46, 69, 1) 100%);
 }
 
 .footer .footer-links{
@@ -362,6 +363,157 @@ footer{
     margin: 20;
     text-align: center;
     color: white;
+}
+
+/* Tambahan Layanan */
+/* Header judul */
+.container-gambar-judul{
+    width: 100vw;
+    height: 350px;
+    background-color: #0F2C4C;
+    position: relative;
+    filter:brightness(70%);
+}
+
+.teks-judul{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    color: var(--white-color);
+}
+
+.teks-judul h2{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/* main isi */
+.main-isi{
+    display: flex;
+    margin:70px 0;
+    justify-content:space-between;
+    gap: 70px;
+}
+
+.main-gambar-slide{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main-gambar-slide #slider-img{
+    width: 500px;
+    filter: brightness(70%);
+    border-radius: 5px;
+}
+
+.slider-btn{
+    position: absolute;
+    top: 43%;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 30px;
+    transition: transform .4s ease-in-out;
+}
+
+.slider-btn:hover{
+    color: var(--orange-color);
+    transition: transform .4s ease-in-out;
+}
+
+.slider-btn.prev{
+    left: -8%;
+}
+
+.slider-btn.prev:hover{
+    transform: translateX(-10px);
+}
+
+.slider-btn.next{
+    right: -8%;
+}
+
+.slider-btn.slider-btn.next:hover{
+    transform: translateX(10px);
+}
+
+.main-teks h3{
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--dark-blue-color);
+    margin: 0 0 30px 0;
+}
+
+.main-teks p, .main-teks ul{
+    font-size: 14px;
+    color: var(--dark-blue-color);
+}
+
+.main-teks .SNI-judul{
+    list-style:circle;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.main-teks .SNI-isi{
+    margin-bottom: 10px;
+}
+
+/* navigasi bawah */
+.container-navigasi{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-navigasi .isi-nav-bawah{
+    width: 350px;
+    padding: 20px;
+    background-color: var(--dark-blue-color);
+    border-radius: 5px;
+}
+
+.container-navigasi .isi-nav-bawah h4{
+    color: var(--orange-color);
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--white-color)
+}
+
+.container-navigasi .isi-nav-bawah ul{
+    padding-left: 15px ;
+    list-style:circle ;
+    color: var(--white-color);
+}
+
+.container-navigasi .isi-nav-bawah li{
+    margin-bottom: 15px;
+}
+
+.container-navigasi .isi-nav-bawah a{
+    color: var(--white-color);
+}
+
+/* Slider gambar */
+#slider-img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.4s ease-in-out; /* Transisi halus */
+    opacity: 1;
+}
+
+.slider-btn {
+    /* ... (style sebelumnya) ... */
+    transition: background 0.3s;
+}
+
+/* Memastikan dots berada di atas gambar */
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    z-index: 11;
 }
 
 /* Pad Configuration */
@@ -402,6 +554,85 @@ footer{
 
     .mobile-menu-container{
         display: none;
+    }
+
+     /*Hero sectionn*/
+    section .hero-section{
+        gap: 10px;
+    }
+
+     .hero-section .left{
+        width: 100%;
+        max-width: 420px;
+     }
+
+     .hero-section .right{
+        width: 100%;
+        max-width: 350px;
+     }
+
+     footer{
+        padding: 15px;
+     }
+
+     .links li a{
+        width: 500px;
+        font-size: 15px;
+     }
+
+     .links li img{
+        scale: 80%;
+     }
+
+     .logo-footer{
+        scale: 75%;
+     }
+
+     .copyright p{
+        font-size: 10px;
+     }
+
+    .layanan-button{
+        max-width: 200px;
+    }
+
+    .drop-down .sub-menu span{
+        font-size: 11px;
+    }
+
+    .isi-sub-menu .Soil, .isi-sub-menu .Geotechnical, .isi-sub-menu .Lifting {
+    width: 100%;
+    max-width: 250px;
+    }
+
+    .isi-sub-menu li a{
+        font-size: 10px;
+    }
+
+    .isi-sub-menu li {
+    width: 100%;
+    }
+    /* tambahan konfidurasi layanan */
+    .teks-judul{
+    top: 25%;
+    }
+
+    .main-isi{
+        display: grid;
+    }
+
+    .main-gambar-slide{
+        order: 2;
+        justify-self: center;
+    }
+
+    .main-teks{
+        order: 1;
+    }
+
+    .container-navigasi .isi-nav-bawah {
+    max-width: 280px;
+    width: 100%;
     }
 }
 
@@ -680,8 +911,12 @@ footer{
         border-bottom: 2px solid var(--orange-color);
     }
 
+    .container-navigasi .isi-nav-bawah {
+        max-width: 210px;
+        width: 100%;
+    }
+
 }
-/* update untuk container */
 
 @media(max-width: 450px){
     .wrapper{
@@ -784,7 +1019,63 @@ footer{
         width: 100%;
         display: block;
     }
+    
+    /* tmabahana konfigurasi layanan */
+    .teks-judul h2 {
+    font-size: 30px;
+    }
+    
+    .teks-judul {
+        top: 55%;
+        left: 3.5%;
+    }
 
+    .main-teks {
+        max-width: fill;
+    }
+
+    .main-teks h3{
+        font-size: 16px;
+    }
+
+    .main-teks p{
+        font-size: 12px;
+    }
+
+    .main-gambar-slide #slider-img {
+    width: 300px;
+    }
+
+    .container-navigasi .isi-nav-bawah {
+        max-width: 425px;
+    }
+
+    .container-navigasi .isi-nav-bawah h4, .container-navigasi .isi-nav-bawah a{
+    font-size: 12px;
+    }
+
+    .container-navigasi{
+        display: grid;   
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .wrapper{
+        padding: 0 20px;
+    }
+
+    .slider-btn{
+        top: 40%;
+    }
+
+    .slider-btn.next{
+        right: -10%;
+    }
+
+    .slider-btn.prev{
+        left: -10%;
+    }
+    
 }
 
 @media(max-width: 330px){
@@ -800,6 +1091,10 @@ footer{
         font-size: 10px;
         text-align: left;
         width: auto;
+    }
+
+    .main-gambar-slide #slider-img {
+        width: 250px;
     }
 
 }
