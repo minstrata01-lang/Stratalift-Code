@@ -494,6 +494,16 @@ footer{
     .mobile-menu-container{
         display: none;
     }
+
+    .wrapperisi{
+        display: grid;
+        justify-content: center;
+    }
+
+    .Slide-Gambar{
+        width: fit-content;
+        justify-self: center;
+    }
 }
 
 @media(max-width: 800px){
@@ -771,6 +781,18 @@ footer{
         border-bottom: 2px solid var(--orange-color);
     }
 
+
+    /* Tambahan untuk gambar */
+    .Slide-Gambar{
+        height: 500px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .deskripsi{
+        max-width: 500px;
+        width: 100%;
+    }
 }
 
 @media(max-width: 450px){
