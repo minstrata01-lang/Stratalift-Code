@@ -177,7 +177,7 @@ const observer = new IntersectionObserver((entries) => {
 const elemenAnimasi = document.querySelectorAll('.scroll-anim');
 elemenAnimasi.forEach((el) => observer.observe(el));
 
-// menambahkan drop down efek untuk mobile
+// navigation bar untuk mobile
 const menuData = {
     'Layanan': {
         title: 'Layanan Kami',
@@ -190,32 +190,32 @@ const menuData = {
     'soil_sub': {
         title: 'Soil Investigation',
         items: [
-            { text: 'Sondir/Core Penetration Test (CPT)', url: 'boring.html' },
-            { text: 'Boring & Standard Penetration Test (SPT)', url: 'sondir.html'},
-            { text: 'Laboratorium Test', url: '#'},
-            { text: 'Geolistrik/Electrical Resistivity Tomography (ERT)', url: '#'},
-            { text: 'Ground Penetrating Radar (GPR)', url: '#'},
-            { text: 'Geotechnical Instruments', url: '#'}
+            { text: 'Sondir/Core Penetration Test (CPT)', url: 'Soil_Investigation.html?id=sondir' },
+            { text: 'Boring & Standard Penetration Test (SPT)', url: 'Soil_Investigation.html?id=boring'},
+            { text: 'Laboratorium Test', url: 'Soil_Investigation.html?id=lab-test'},
+            { text: 'Geolistrik/Electrical Resistivity Tomography (ERT)', url: 'Soil_Investigation.html?id=geo_listrik'},
+            { text: 'Ground Penetrating Radar (GPR)', url: 'Soil_Investigation.html?id=ground_penet'},
+            { text: 'Geotechnical Instruments', url: 'Soil_Investigation.html?id=geo_inst'}
         ]
     },
     'geo_sub' : {
         title : 'Geotechnical Engineering',
         items: [
-            {text: 'Slope Stability Anlaysis', url: '#'},
-            {text: 'Ground Analysis', url: '#'},
-            {text: 'Soft Ground Anlaysiis', url: '#'},
-            {text: 'Foundation Analysis', url: '#'}
+            {text: 'Slope Stability Anlaysis', url: '../Geo_engineer/Geo_eng.html?id=slope'},
+            {text: 'Ground Analysis', url: '../Geo_engineer/Geo_eng.html?id=ground'},
+            {text: 'Soft Ground Anlaysiis', url: '../Geo_engineer/Geo_eng.html?id=soft-ground'},
+            {text: 'Foundation Analysis', url: '../Geo_engineer/Geo_eng.html?id=foundation'}
         ]
     },
     'lift_sub' : {
         title : 'Lifting and Rigging Engineering',
         items : [
-            { text: 'Lifting Management System', url: '#'},
-            { text: 'Lifting Operation Plan', url: '#'},
-            { text: 'Lifting Equipment Design', url: '#'},
-            { text: 'Lifting Equipment Inspection', url: '#'},
-            { text: 'Remaining Life Assessment', url: '#'},
-            { text: 'Training', url: '#'},
+            { text: 'Lifting Management System', url: '../Lifting_Ringging/Lifting.html?id=lifting_man'},
+            { text: 'Lifting Operation Plan', url: '../Lifting_Ringging/Lifting.html?id=lifting_op'},
+            { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=lifting_eq_de'},
+            { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=lifting_eq_ins'},
+            { text: 'Residual Life Assessment', url: '../Lifting_Ringging/Lifting.html?id=residual'},
+            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'}
         ]
     }
 
