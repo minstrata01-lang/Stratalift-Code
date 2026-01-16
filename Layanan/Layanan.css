@@ -370,6 +370,7 @@ footer{
 .container-gambar-judul{
     width: 100vw;
     height: 350px;
+    overflow: hidden;
     background-color: #0F2C4C;
     position: relative;
     filter:brightness(70%);
@@ -1076,6 +1077,10 @@ footer{
         left: -10%;
     }
     
+    .container-gambar-judul img{
+        position: absolute;
+        left: -50%;
+    }
 }
 
 @media(max-width: 330px){
@@ -1097,4 +1102,8 @@ footer{
         width: 250px;
     }
 
+    .container-gambar-judul img{
+        position: absolute;
+        left: -80%;
+    }
 }

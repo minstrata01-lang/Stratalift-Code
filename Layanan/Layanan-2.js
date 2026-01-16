@@ -295,9 +295,6 @@ const dataLayanan = {
             <p>Analisis dilakukan melalui evaluasi <strong>beban kerja aktual, jumlah dan spektrum siklus lifting, kelelahan material (fatigue), korosi, serta hasil inspeksi dan Non-Destructive Test (NDT)</strong>. Pendekatan ini memungkinkan penilaian objektif terhadap tingkat risiko kegagalan, serta rekomendasi teknis apakah peralatan masih dapat digunakan, memerlukan perbaikan, atau harus dipensiunkan.</p>
             <p>Dengan Residual Life Assessment, klien dapat mengambil keputusan berbasis <strong>engineering judgment</strong>, mengoptimalkan pemanfaatan aset, serta menghindari risiko keselamatan dan biaya tak terduga akibat kegagalan peralatan lifting. </p>
         `,
-        images: [
-            
-        ],
         sni: [
             
         ]
@@ -309,9 +306,6 @@ const dataLayanan = {
             <p>Kami menyediakan <strong>pelatihan lifting berbasis praktik engineering dan keselamatan kerja</strong>, dirancang untuk meningkatkan kompetensi personel yang terlibat dalam aktivitas pengangkatan beban. Pelatihan tidak hanya fokus pada prosedur, tetapi juga pemahaman <strong>prinsip teknis di balik lifting</strong>.</p>
             <p>Materi pelatihan mencakup <strong>dasar-dasar lifting & rigging, interpretasi load chart crane, pengenalan peralatan lifting, risk assessment, hingga critical lifting operation</strong>. Program dapat disesuaikan untuk operator, rigger, supervisor, maupun engineer, dan disampaikan oleh praktisi berpengalaman di bidang lifting engineering.</p>
         `,
-        images: [
-            
-        ],
         sni: [
         
         ]
