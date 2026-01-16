@@ -66,10 +66,10 @@ const menuData = {
     'geo_sub' : {
         title : 'Geotechnical Engineering',
         items: [
-            {text: 'Slope Stability Anlaysis', url: '#'},
-            {text: 'Ground Analysis', url: '#'},
-            {text: 'Soft Ground Anlaysiis', url: '#'},
-            {text: 'Foundation Analysis', url: '#'}
+            {text: 'Slope Stability Anlaysis', url: '../Geo_engineer/Geo_eng.html?id=slope'},
+            {text: 'Ground Analysis', url: '../Geo_engineer/Geo_eng.html?id=ground'},
+            {text: 'Soft Ground Anlaysiis', url: '../Geo_engineer/Geo_eng.html?id=soft-ground'},
+            {text: 'Foundation Analysis', url: '../Geo_engineer/Geo_eng.html?id=foundation'}
         ]
     },
     'lift_sub' : {
@@ -329,7 +329,7 @@ const dataLayanan = {
     "geo_inst": {
         category: "Soil Investigation",
         title: "Instrumen Monitoring Geoteknik",
-        description: `
+        description: `s
             <p><strong>Instrumen Monitoring Geoteknik</strong> merupakan sistem pemantauan yang digunakan untuk mengamati perilaku tanah dan struktur secara berkelanjutan selama tahap konstruksi maupun operasional. Monitoring ini berperan penting dalam mendeteksi pergerakan tanah, perubahan tekanan air pori, serta respons struktur terhadap beban dan kondisi lingkungan, sehingga potensi risiko dapat diidentifikasi sejak dini dan tindakan mitigasi dapat dilakukan secara tepat waktu.</p>
             <p>Pelaksanaan monitoring geoteknik dilakukan melalui pemasangan instrumen khusus pada lokasi dan kedalaman yang telah ditentukan berdasarkan hasil investigasi dan analisis desain. Instrumen yang umum digunakan meliputi <strong>inclinometer</strong> untuk memantau pergerakan lateral tanah dan lereng, <strong>piezometer</strong> untuk mengukur tekanan air pori dan muka air tanah, <strong>settlement marker atau settlement plate</strong> untuk memantau penurunan tanah, serta instrumen pendukung lainnya sesuai kebutuhan proyek. Data hasil pengukuran dapat diperoleh secara manual maupun melalui sistem <strong>monitoring real-time</strong> yang terintegrasi dengan data logger dan platform pemantauan, sehingga kondisi lapangan dapat dipantau secara periodik maupun kontinu.</p>
             <p>Seluruh sistem monitoring dirancang untuk mendukung verifikasi asumsi desain, pengendalian risiko selama konstruksi, serta evaluasi kinerja tanah dan struktur dalam jangka panjang. Hasil pemantauan disajikan dalam bentuk grafik, tren pergerakan, dan laporan interpretatif yang mudah dipahami oleh pemilik proyek, konsultan, maupun kontraktor. Dengan pendekatan ini, keputusan teknis dapat diambil berdasarkan data aktual lapangan, bukan sekadar asumsi.</p>
