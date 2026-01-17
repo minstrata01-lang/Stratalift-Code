@@ -372,15 +372,24 @@ footer{
     width: 100%;
     height: 350px;
     overflow: hidden;
-    background-color: #0F2C4C;
     position: relative;
-    filter:brightness(70%);
+}
+
+.container-gambar-judul::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(13, 28, 51, 0.85), rgba(13, 28, 51, 0.85));
 }
 
 .teks-judul{
     position: absolute;
-    bottom: 40%;
-    left: 12%;
+    width: 100%;
+    bottom: 50%;
+    text-align: center;
     color: var(--white-color);
 }
 
@@ -919,7 +928,7 @@ footer{
     }
 
     .teks-judul{
-        bottom:35%;
+        bottom:43%;
     }
 
 }
@@ -1032,8 +1041,7 @@ footer{
     }
     
     .teks-judul {
-        bottom: 30%;
-        left: 3.5%;
+        bottom: 45%;
     }
 
     .main-teks {
@@ -1110,5 +1118,9 @@ footer{
     .container-gambar-judul img{
         position: absolute;
         left: -80%;
+    }
+
+    .teks-judul h2{
+        font-size: ;
     }
 }

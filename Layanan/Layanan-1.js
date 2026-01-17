@@ -220,7 +220,7 @@ tombolIsiLayanan.forEach(button => {
 // 1. Data Konten Semua Layanan
 const dataLayanan = {
     "slope": {
-        category: "Geotechnical Engineering",
+        category: "GEOTECHNICAL ENGINEERING",
         title: "Slope Stability Analysis",
         description: `
             <p><strong>Slope Stability Analysis</strong> merupakan layanan rekayasa geoteknik yang bertujuan untuk mengevaluasi tingkat keamanan dan kestabilan lereng alami maupun lereng buatan terhadap potensi longsor. Analisis ini sangat penting pada area perbukitan, galian (cut slope), timbunan (fill slope), serta lereng di sekitar bangunan, jalan, tangki, dan infrastruktur kritis lainnya, khususnya pada wilayah dengan kondisi tanah kompleks dan pengaruh air tanah yang signifikan.</p>
@@ -242,7 +242,7 @@ const dataLayanan = {
         ]
     },
     "ground": {
-        category: "Geotechnical Engineering",
+        category: "GEOTECHNICAL ENGINEERING",
         title: "Ground Analysis",
         description: `
             <p><strong>Ground Analysis</strong> merupakan layanan rekayasa geoteknik yang bertujuan untuk mengevaluasi kondisi dan perilaku tanah sebagai media pendukung struktur. Analisis ini menjadi dasar utama dalam pengambilan keputusan desain pondasi, perkuatan tanah, serta penilaian risiko geoteknik seperti penurunan, daya dukung, dan deformasi tanah. Dengan pemahaman kondisi tanah yang menyeluruh, potensi permasalahan geoteknik dapat diidentifikasi sejak tahap awal perencanaan. </p>
@@ -265,7 +265,7 @@ const dataLayanan = {
         ]
     },
     "soft-ground": {
-        category: "Geotechnical Engineering",
+        category: "GEOTECHNICAL ENGINEERING",
         title: "Soft Ground Analysis",
         description: `
             <p><strong>Soft Ground Analysis</strong> merupakan layanan rekayasa geoteknik yang difokuskan pada evaluasi perilaku tanah lunak yang memiliki daya dukung rendah dan tingkat kompresibilitas tinggi. Kondisi tanah lunak sering dijumpai pada area rawa, pesisir, reklamasi, dan endapan aluvial, yang berpotensi menimbulkan permasalahan serius seperti penurunan berlebihan, ketidakstabilan, dan kegagalan struktur apabila tidak dianalisis secara tepat sejak tahap perencanaan.</p>
@@ -285,7 +285,7 @@ const dataLayanan = {
         ]
     },
     "foundation": {
-        category: "Geotechnical Engineering",
+        category: "GEOTECHNICAL ENGINEERING",
         title: "Foundation Analysis ",
         description: `
             <p><strong>Foundation Analysis</strong> merupakan layanan rekayasa geoteknik yang bertujuan untuk memastikan pondasi mampu menyalurkan beban struktur ke tanah secara aman dan terkendali. Analisis ini menjadi tahapan krusial dalam perencanaan bangunan, infrastruktur, dan fasilitas industri, karena kegagalan pondasi dapat berdampak langsung terhadap keselamatan struktur dan operasional jangka panjang.</p>

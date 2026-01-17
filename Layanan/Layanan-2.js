@@ -235,7 +235,7 @@ const dataLayanan = {
         ]
     },
     "operration": {
-        category: "Lifting & Rigging Engineering",
+        category: "LIFTING & RIGGING ENGINEERING ",
         title: "Lifting Operation Plan",
         description: `
             <p><strong>Lifting Operation Plan</strong> adalah dokumen teknis yang menjabarkan secara rinci <strong>bagaimana suatu aktivitas pengangkatan beban akan dilaksanakan dengan aman dan terkendali</strong>. Dokumen ini menjadi acuan utama bagi seluruh pihak yang terlibat, mulai dari engineer, supervisor, hingga tim operasional di lapangan. </p>
@@ -254,7 +254,7 @@ const dataLayanan = {
 
     },
     "design": {
-        category: "Lifting & Rigging Engineering",
+        category: "LIFTING & RIGGING ENGINEERING ",
         title: "Lifting Equipment Design",
         description: `
             <p>Kami menyediakan layanan <strong>perancangan peralatan lifting khusus (engineered lifting devices) </strong> yang disesuaikan dengan kebutuhan proyek dan kondisi lapangan. Desain dilakukan berbasis perhitungan teknik, bukan asumsi, untuk memastikan <strong>kekuatan, stabilitas, dan faktor keselamatan </strong>terpenuhi.</p>
@@ -272,7 +272,7 @@ const dataLayanan = {
         ]
     },
     "inspection": {
-        category: "Lifting & Rigging Engineering",
+        category: "LIFTING & RIGGING ENGINEERING",
         title: "Lifting Equipment Inspection ",
         description: `
             <p>Lifting Equipment Inspection bertujuan untuk memastikan seluruh peralatan angkat berada dalam kondisi <strong>layak operasi dan aman digunakan</strong>. Inspeksi dilakukan secara sistematis untuk mengidentifikasi potensi cacat, degradasi material, maupun ketidaksesuaian terhadap standar keselamatan.</p>
@@ -288,7 +288,7 @@ const dataLayanan = {
         ]
     },
     "residual": {
-        category: "Lifting & Rigging Engineering",
+        category: "LIFTING & RIGGING ENGINEERING ",
         title: "Residual Life Assessment",
         description: `
             <p>Residual Life Assessment (RLA) adalah kajian teknik untuk menentukan <strong>sisa umur pakai (residual life)</strong> peralatan lifting berdasarkan kondisi aktual, histori penggunaan, dan mekanisme degradasi material. Layanan ini berperan penting dalam memastikan peralatan tetap <strong>aman, andal, dan layak operasi</strong> sepanjang siklus hidupnya.</p>
@@ -300,7 +300,7 @@ const dataLayanan = {
         ]
     },
     "training": {
-        category: "Lifting & Rigging Engineering",
+        category: "LIFTING & RIGGING ENGINEERING ",
         title: "Training ",
         description: `
             <p>Kami menyediakan <strong>pelatihan lifting berbasis praktik engineering dan keselamatan kerja</strong>, dirancang untuk meningkatkan kompetensi personel yang terlibat dalam aktivitas pengangkatan beban. Pelatihan tidak hanya fokus pada prosedur, tetapi juga pemahaman <strong>prinsip teknis di balik lifting</strong>.</p>

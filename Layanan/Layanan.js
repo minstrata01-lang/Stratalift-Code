@@ -220,7 +220,7 @@ tombolIsiLayanan.forEach(button => {
 // 1. Data Konten Semua Layanan
 const dataLayanan = {
     "sondir": {
-        category: "Soil Investigation",
+        category: "SOIL INVESTIGATION",
         title: "Sondir/Cone Penetration Test (CPT)",
         description: `
             <p><strong>Sondir / Cone Penetration Test (CPT)</strong> merupakan metode penyelidikan tanah in-situ yang digunakan untuk mengetahui kondisi dan karakteristik tanah bawah permukaan secara cepat, akurat, dan berkesinambungan. Pengujian ini dilakukan dengan menekan konus baja berstandar ke dalam tanah secara vertikal dengan kecepatan konstan, sehingga diperoleh data tahanan tanah terhadap penetrasi. Dari hasil tersebut, dapat diinterpretasikan jenis lapisan tanah, tingkat kepadatan atau kekerasan tanah, serta estimasi daya dukung dan potensi penurunan tanah yang sangat penting dalam perencanaan pondasi, stabilitas lereng, dan pekerjaan geoteknik lainnya.</p>
@@ -240,7 +240,7 @@ const dataLayanan = {
         ]
     },
     "boring": {
-        category: "Soil Investigation",
+        category: "SOIL INVESTIGATION",
         title: "Boring & Standard Penetration Test (SPT)",
         description: `
             <p><strong>Boring & Standard Penetration Test (SPT)</strong> merupakan metode penyelidikan tanah yang dilakukan melalui pengeboran untuk mengetahui kondisi lapisan tanah secara langsung serta memperoleh data teknis yang diperlukan dalam perencanaan geoteknik. Metode ini digunakan secara luas untuk mendukung desain pondasi, analisis daya dukung tanah, evaluasi penurunan (settlement), serta penilaian stabilitas tanah pada berbagai jenis proyek bangunan dan infrastruktur.</p>
@@ -262,7 +262,7 @@ const dataLayanan = {
         ]
     },
     "lab-test": {
-        category: "Soil Investigation",
+        category: "SOIL INVESTIGATION",
         title: "Laboratorium Test",
         description: `
             <p><strong>Pengujian Laboratorium Tanah</strong> merupakan bagian penting dalam penyelidikan geoteknik untuk memperoleh parameter teknis tanah secara kuantitatif dan terkontrol. Pengujian ini dilakukan terhadap contoh tanah yang diambil dari lapangan melalui pekerjaan boring atau sampling, dengan tujuan untuk memahami sifat fisik dan mekanis tanah sebagai dasar analisis dan perencanaan konstruksi yang aman serta efisien.</p>
@@ -284,7 +284,7 @@ const dataLayanan = {
         ]
     },
     "geo_listrik": {
-        category: "Soil Investigation",
+        category: "SOIL INVESTIGATION",
         title: "Geolistrik / Electrical Resistivity Tomography (ERT) ",
         description: `
             <p><strong>Geolistrik / Electrical Resistivity Tomography (ERT)</strong> merupakan metode investigasi geofisika non-destruktif yang digunakan untuk memetakan kondisi bawah permukaan berdasarkan perbedaan nilai tahanan jenis listrik (resistivitas) material tanah dan batuan. Metode ini sangat efektif untuk mengidentifikasi variasi lapisan tanah, kedalaman batuan dasar, zona lemah, rongga, rekahan, serta kondisi kejenuhan air tanah, sehingga banyak digunakan sebagai pendukung studi geoteknik, stabilitas lereng, pondasi, dan mitigasi risiko geologi.</p>
@@ -306,7 +306,7 @@ const dataLayanan = {
         ]
     },
     "ground_penet": {
-        category: "Soil Investigation",
+        category: "SOIL INVESTIGATION",
         title: "Ground Penetrating Radar (GPR)",
         description: `
             <p><strong>Ground Penetrating Radar (GPR)</strong> merupakan metode investigasi bawah permukaan non-destruktif yang menggunakan gelombang elektromagnetik frekuensi tinggi untuk mendeteksi dan memetakan objek, lapisan, serta anomali di bawah permukaan tanah secara cepat dan akurat. Metode ini sangat efektif untuk mengidentifikasi utilitas tertanam, lapisan perkerasan, rongga, rekahan, serta perubahan material tanah dan struktur tanpa perlu penggalian atau pembongkaran, sehingga banyak digunakan pada area eksisting, fasilitas aktif, dan lingkungan dengan keterbatasan akses.</p>
@@ -327,7 +327,7 @@ const dataLayanan = {
         ]
     },
     "geo_inst": {
-        category: "Soil Investigation",
+        category: "SOIL INVESTIGATION",
         title: "Instrumen Monitoring Geoteknik",
         description: `s
             <p><strong>Instrumen Monitoring Geoteknik</strong> merupakan sistem pemantauan yang digunakan untuk mengamati perilaku tanah dan struktur secara berkelanjutan selama tahap konstruksi maupun operasional. Monitoring ini berperan penting dalam mendeteksi pergerakan tanah, perubahan tekanan air pori, serta respons struktur terhadap beban dan kondisi lingkungan, sehingga potensi risiko dapat diidentifikasi sejak dini dan tindakan mitigasi dapat dilakukan secara tepat waktu.</p>
