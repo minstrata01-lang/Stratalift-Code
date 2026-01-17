@@ -379,7 +379,7 @@ footer{
 
 .teks-judul{
     position: absolute;
-    top: 45%;
+    bottom: 40%;
     left: 12%;
     color: var(--white-color);
 }
@@ -616,7 +616,7 @@ footer{
     }
     /* tambahan konfidurasi layanan */
     .teks-judul{
-    top: 25%;
+    bottom: 40%;
     }
 
     .main-isi{
@@ -919,7 +919,7 @@ footer{
     }
 
     .teks-judul{
-        top: 50%;
+        bottom:35%;
     }
 
 }
@@ -1032,7 +1032,7 @@ footer{
     }
     
     .teks-judul {
-        top: 50%;
+        bottom: 30%;
         left: 3.5%;
     }
 
