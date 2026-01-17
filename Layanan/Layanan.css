@@ -918,6 +918,10 @@ footer{
         width: 100%;
     }
 
+    .teks-judul{
+        top: 50%;
+    }
+
 }
 
 @media(max-width: 450px){
@@ -1024,11 +1028,11 @@ footer{
     
     /* tmabahana konfigurasi layanan */
     .teks-judul h2 {
-    font-size: 30px;
+    font-size: 35px;
     }
     
     .teks-judul {
-        top: 55%;
+        top: 50%;
         left: 3.5%;
     }
 
