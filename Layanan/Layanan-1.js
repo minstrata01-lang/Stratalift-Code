@@ -68,19 +68,19 @@ const menuData = {
         items: [
             {text: 'Slope Stability Anlaysis', url: '/Geo_engineer/Geo_eng.html?id=slope'},
             {text: 'Ground Analysis', url: '/Geo_engineer/Geo_eng.html?id=ground'},
-            {text: 'Soft Ground Anlaysis', url: '/Geo_engineer/Geo_eng.html?id=soft-ground'},
+            {text: 'Soft Ground Anlaysiis', url: '/Geo_engineer/Geo_eng.html?id=soft-ground'},
             {text: 'Foundation Analysis', url: '/Geo_engineer/Geo_eng.html?id=foundation'}
         ]
     },
     'lift_sub' : {
         title : 'Lifting and Rigging Engineering',
         items : [
-            { text: 'Lifting Management System', url: '../Lifting_Ringging/Lifting.html?id=manage'},
-            { text: 'Lifting Operation Plan', url: '../Lifting_Ringging/Lifting.html?id=operration'},
-            { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=design'},
-            { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=inspection'},
-            { text: 'Residual Life Assessment', url: '../Lifting_Ringging/Lifting.html?id=residual'},
-            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'},
+            { text: 'Lifting Management System', url: '/Lifting_Ringging/Lifting.html?id=manage'},
+            { text: 'Lifting Operation Plan', url: '/Lifting_Ringging/Lifting.html?id=operration'},
+            { text: 'Lifting Equipment Design', url: '/Lifting_Ringging/Lifting.html?id=design'},
+            { text: 'Lifting Equipment Inspection', url: '/Lifting_Ringging/Lifting.html?id=inspection'},
+            { text: 'Residual Life Assessment', url: '/Lifting_Ringging/Lifting.html?id=residual'},
+            { text: 'Training', url: '/Lifting_Ringging/Lifting.html?id=training'},
         ]
     }
 
