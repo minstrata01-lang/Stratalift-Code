@@ -352,24 +352,25 @@ let currentIndex = 0;
 let currentImages = [];
 let autoSlideTimer;
 
+// Variabel untuk Swipe
+let touchStartX = 0;
+let touchEndX = 0;
+
 function getServiceId() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('id') || 'sondir';
+    return params.get('id') || 'slope';
 }
 
 function renderPage() {
     const id = getServiceId();
     const data = dataLayanan[id];
-
     if (!data) return;
 
-    // 1. Update Konten Teks & Header
     document.getElementById('category-title').innerText = data.category;
     document.getElementById('service-title').innerText = data.title;
     document.getElementById('service-description').innerHTML = data.description;
     document.title = `${data.title} - Stratalift Solutions`;
 
-    // 2. Update SNI
     const sniContainer = document.getElementById('service-sni');
     sniContainer.innerHTML = ''; 
     data.sni.forEach(item => {
@@ -383,7 +384,6 @@ function renderPage() {
         sniContainer.appendChild(liIsi);
     });
 
-    // 3. Setup Slider
     currentImages = data.images;
     currentIndex = 0;
     stopAutoSlide();
@@ -394,22 +394,43 @@ function setupSlider() {
     const container = document.querySelector('.main-gambar-slide');
     if (!container) return;
 
-    // Bersihkan container dan masukkan gambar pertama
-    container.innerHTML = `<img id="slider-img" src="${currentImages[0]}" alt="Service Image">`;
+    container.innerHTML = `<img id="slider-img" src="${currentImages[0]}" alt="Service Image" style="transition: opacity 0.3s ease;">`;
 
-    // Jika gambar lebih dari satu, munculkan navigasi
     if (currentImages.length > 1) {
         container.innerHTML += `
-            <button class="slider-btn prev" onclick="manualChange(-1)">&#10094;</button>
-            <button class="slider-btn next" onclick="manualChange(1)">&#10095;</button>
+            <button class="slider-btn prev" onclick="manualChange(-1)" aria-label="Previous">&#10094;</button>
+            <button class="slider-btn next" onclick="manualChange(1)" aria-label="Next">&#10095;</button>
             <div class="slider-dots" id="dots-container"></div>
         `;
         renderDots();
         startAutoSlide();
+        
+        // TAMBAHKAN: Event Listener untuk Swipe (Mobile)
+        addSwipeListeners(container);
     }
 }
 
-// Logika Perubahan Slide
+// Fungsi deteksi Swipe
+function addSwipeListeners(container) {
+    container.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+}
+
+function handleSwipe() {
+    const swipeThreshold = 50; // Jarak minimal geser (pixel)
+    if (touchStartX - touchEndX > swipeThreshold) {
+        manualChange(1); // Swipe Kiri -> Next
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+        manualChange(-1); // Swipe Kanan -> Prev
+    }
+}
+
 function changeSlide(direction) {
     currentIndex += direction;
     if (currentIndex >= currentImages.length) currentIndex = 0;
@@ -420,16 +441,15 @@ function changeSlide(direction) {
 function updateSliderView() {
     const imgElement = document.getElementById('slider-img');
     if (imgElement) {
-        imgElement.style.opacity = 0;
+        imgElement.style.opacity = 0.4; // Efek transisi halus
         setTimeout(() => {
             imgElement.src = currentImages[currentIndex];
             imgElement.style.opacity = 1;
-        }, 200);
+        }, 150);
     }
     updateDots();
 }
 
-// Navigasi Manual
 function manualChange(direction) {
     stopAutoSlide();
     changeSlide(direction);
@@ -443,7 +463,6 @@ function manualGoTo(index) {
     startAutoSlide();
 }
 
-// Dots & AutoSlide
 function renderDots() {
     const dotsContainer = document.getElementById('dots-container');
     if (dotsContainer) {
@@ -460,12 +479,13 @@ function updateDots() {
 }
 
 function startAutoSlide() {
-    autoSlideTimer = setInterval(() => changeSlide(1), 5000);
+    if (currentImages.length > 1) {
+        autoSlideTimer = setInterval(() => changeSlide(1), 5000);
+    }
 }
 
 function stopAutoSlide() {
     clearInterval(autoSlideTimer);
 }
 
-// Jalankan saat load
 window.onload = renderPage;
