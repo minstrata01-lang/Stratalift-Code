@@ -191,7 +191,7 @@ const menuData = {
             { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=design'},
             { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=inspection'},
             { text: 'Residual Life Assessment', url: '../Lifting_Ringging/Lifting.html?id=residual'},
-            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'}
+            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'},
         ]
     }
 };

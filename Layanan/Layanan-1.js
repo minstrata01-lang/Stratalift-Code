@@ -75,12 +75,12 @@ const menuData = {
     'lift_sub' : {
         title : 'Lifting and Rigging Engineering',
         items : [
-            { text: 'Lifting Management System', url: '../Lifting_Ringging/Lifting.html?id=lifting_man'},
-            { text: 'Lifting Operation Plan', url: '../Lifting_Ringging/Lifting.html?id=lifting_op'},
-            { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=lifting_eq_de'},
-            { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=lifting_eq_ins'},
+            { text: 'Lifting Management System', url: '../Lifting_Ringging/Lifting.html?id=manage'},
+            { text: 'Lifting Operation Plan', url: '../Lifting_Ringging/Lifting.html?id=operration'},
+            { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=design'},
+            { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=inspection'},
             { text: 'Residual Life Assessment', url: '../Lifting_Ringging/Lifting.html?id=residual'},
-            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'}
+            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'},
         ]
     }
 
