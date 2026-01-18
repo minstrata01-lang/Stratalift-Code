@@ -359,20 +359,46 @@ function setupSlider() {
     const container = document.querySelector('.main-gambar-slide');
     if (!container) return;
 
-    container.innerHTML = `<img id="slider-img" src="${currentImages[0]}" alt="Service Image" style="transition: opacity 0.3s ease;">`;
+    // 1. Buat seluruh HTML dalam satu variabel string (Atomic Update)
+    let content = `<img id="slider-img" src="${currentImages[0]}" alt="Service Image" style="transition: opacity 0.3s ease;">`;
 
     if (currentImages.length > 1) {
-        container.innerHTML += `
+        content += `
             <button class="slider-btn prev" onclick="manualChange(-1)" aria-label="Previous">&#10094;</button>
             <button class="slider-btn next" onclick="manualChange(1)" aria-label="Next">&#10095;</button>
             <div class="slider-dots" id="dots-container"></div>
         `;
+    }
+
+    container.innerHTML = content;
+
+    if (currentImages.length > 1) {
         renderDots();
         startAutoSlide();
-        
-        // TAMBAHKAN: Event Listener untuk Swipe (Mobile)
         addSwipeListeners(container);
+        
+        // 2. Gunakan Event Delegation pada container
+        // Ini jauh lebih stabil untuk mobile
+        setupMobileFeedback(container);
     }
+}
+
+function setupMobileFeedback(container) {
+    const handlePress = (e) => {
+        const btn = e.target.closest('.slider-btn');
+        if (!btn) return;
+        
+        if (e.type === 'touchstart') {
+            btn.classList.add('is-pressed');
+        } else {
+            // Beri sedikit delay 100ms agar mata sempat melihat animasinya
+            setTimeout(() => btn.classList.remove('is-pressed'), 100);
+        }
+    };
+
+    container.addEventListener('touchstart', handlePress, { passive: true });
+    container.addEventListener('touchend', handlePress, { passive: true });
+    container.addEventListener('touchcancel', handlePress, { passive: true });
 }
 
 // Fungsi deteksi Swipe
