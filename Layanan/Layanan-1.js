@@ -66,10 +66,10 @@ const menuData = {
     'geo_sub' : {
         title : 'Geotechnical Engineering',
         items: [
-            {text: 'Slope Stability Anlaysis', url: 'Geo_eng.html?id=slope'},
-            {text: 'Ground Analysis', url: 'Geo_eng.html?id=ground'},
-            {text: 'Soft Ground Anlaysiis', url: 'Geo_eng.html?id=soft-ground'},
-            {text: 'Foundation Analysis', url: 'Geo_eng.html?id=foundation'}
+            {text: 'Slope Stability Anlaysis', url: '/Geo_engineer/Geo_eng.html?id=slope'},
+            {text: 'Ground Analysis', url: '/Geo_engineer/Geo_eng.html?id=ground'},
+            {text: 'Soft Ground Anlaysiis', url: '/Geo_engineer/Geo_eng.html?id=soft-ground'},
+            {text: 'Foundation Analysis', url: '/Geo_engineer/Geo_eng.html?id=foundation'}
         ]
     },
     'lift_sub' : {
