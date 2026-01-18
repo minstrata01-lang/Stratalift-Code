@@ -190,12 +190,12 @@ const menuData = {
     'soil_sub': {
         title: 'Soil Investigation',
         items: [
-            { text: 'Sondir/Core Penetration Test (CPT)', url: '../Soil_investigation/Soil_Investigation.html?id=sondir' },
-            { text: 'Boring & Standard Penetration Test (SPT)', url: '../Soil_investigation/Soil_Investigation.html?id=boring'},
-            { text: 'Laboratorium Test', url: '../Soil_investigation/Soil_Investigation.html?id=lab-test'},
-            { text: 'Geolistrik/Electrical Resistivity Tomography (ERT)', url: '../Soil_investigation/Soil_Investigation.html?id=geo_listrik'},
-            { text: 'Ground Penetrating Radar (GPR)', url: '../Soil_investigation/Soil_Investigation.html?id=ground_penet'},
-            { text: 'Geotechnical Instruments', url: '../Soil_investigation/Soil_Investigation.html?id=geo_inst'}
+            { text: 'Sondir/Core Penetration Test (CPT)', url: '/Soil_investigation/Soil_Investigation.html?id=sondir' },
+            { text: 'Boring & Standard Penetration Test (SPT)', url: '/Soil_investigation/Soil_Investigation.html?id=boring'},
+            { text: 'Laboratorium Test', url: '/Soil_investigation/Soil_Investigation.html?id=lab-test'},
+            { text: 'Geolistrik/Electrical Resistivity Tomography (ERT)', url: '/Soil_investigation/Soil_Investigation.html?id=geo_listrik'},
+            { text: 'Ground Penetrating Radar (GPR)', url: '/Soil_investigation/Soil_Investigation.html?id=ground_penet'},
+            { text: 'Geotechnical Instruments', url: '/Soil_investigation/Soil_Investigation.html?id=geo_inst'}
         ]
     },
     'geo_sub' : {

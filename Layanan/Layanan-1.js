@@ -55,12 +55,12 @@ const menuData = {
     'soil_sub': {
         title: 'Soil Investigation',
         items: [
-            { text: 'Sondir/Core Penetration Test (CPT)', url: '../Soil_investigation/Soil_Investigation.html?id=sondir' },
-            { text: 'Boring & Standard Penetration Test (SPT)', url: '../Soil_investigation/Soil_Investigation.html?id=boring'},
-            { text: 'Laboratorium Test', url: '../Soil_investigation/Soil_Investigation.html?id=lab-test'},
-            { text: 'Geolistrik/Electrical Resistivity Tomography (ERT)', url: '../Soil_investigation/Soil_Investigation.html?id=geo_listrik'},
-            { text: 'Ground Penetrating Radar (GPR)', url: '../Soil_investigation/Soil_Investigation.html?id=ground_penet'},
-            { text: 'Geotechnical Instruments', url: '../Soil_investigation/Soil_Investigation.html?id=geo_inst'}
+            { text: 'Sondir/Core Penetration Test (CPT)', url: '/Soil_investigation/Soil_Investigation.html?id=sondir' },
+            { text: 'Boring & Standard Penetration Test (SPT)', url: '/Soil_investigation/Soil_Investigation.html?id=boring'},
+            { text: 'Laboratorium Test', url: '/Soil_investigation/Soil_Investigation.html?id=lab-test'},
+            { text: 'Geolistrik/Electrical Resistivity Tomography (ERT)', url: '/Soil_investigation/Soil_Investigation.html?id=geo_listrik'},
+            { text: 'Ground Penetrating Radar (GPR)', url: '/Soil_investigation/Soil_Investigation.html?id=ground_penet'},
+            { text: 'Geotechnical Instruments', url: '/Soil_investigation/Soil_Investigation.html?id=geo_inst'}
         ]
     },
     'geo_sub' : {
@@ -75,12 +75,12 @@ const menuData = {
     'lift_sub' : {
         title : 'Lifting and Rigging Engineering',
         items : [
-            { text: 'Lifting Management System', url: '../Lifting_Ringging/Lifting.html?id=manage'},
-            { text: 'Lifting Operation Plan', url: '../Lifting_Ringging/Lifting.html?id=operration'},
-            { text: 'Lifting Equipment Design', url: '../Lifting_Ringging/Lifting.html?id=design'},
-            { text: 'Lifting Equipment Inspection', url: '../Lifting_Ringging/Lifting.html?id=inspection'},
-            { text: 'Residual Life Assessment', url: '../Lifting_Ringging/Lifting.html?id=residual'},
-            { text: 'Training', url: '../Lifting_Ringging/Lifting.html?id=training'},
+            { text: 'Lifting Management System', url: '/Lifting_Ringging/Lifting.html?id=manage'},
+            { text: 'Lifting Operation Plan', url: '/Lifting_Ringging/Lifting.html?id=operration'},
+            { text: 'Lifting Equipment Design', url: '/Lifting_Ringging/Lifting.html?id=design'},
+            { text: 'Lifting Equipment Inspection', url: '/Lifting_Ringging/Lifting.html?id=inspection'},
+            { text: 'Residual Life Assessment', url: '/Lifting_Ringging/Lifting.html?id=residual'},
+            { text: 'Training', url: '/Lifting_Ringging/Lifting.html?id=training'},
         ]
     }
 
