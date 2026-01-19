@@ -429,53 +429,40 @@ footer{
 
 /* 1. Base State */
 .slider-btn {
-    transition: transform .4s ease-in-out, color .4s ease-in-out;
+    /* Gunakan durasi yang lebih pendek (0.2s) agar terasa responsif */
+    transition: transform 0.2s ease-out, color 0.2s ease-out, opacity 0.2s ease-out;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent; /* Menghapus kotak abu-abu di mobile */
+    -webkit-tap-highlight-color: transparent;
     outline: none;
+    /* Tambahkan ini agar pergerakan transform lebih halus di HP */
+    will-change: transform; 
 }
 
-.slider-btn.prev {
-    left: -8%;
-}
+.slider-btn.prev { left: -8%; }
+.slider-btn.next { right: -8%; }
 
-.slider-btn.next {
-    right: -8%;
-}
-
-/* 2. Hover State (Hanya untuk Desktop/Mouse) */
+/* 2. Hover State (Desktop Only) */
 @media (hover: hover) {
     .slider-btn:hover {
         color: var(--orange-color);
-
     }
-    
-    .slider-btn.prev:hover {
-        transform: translateX(-10px);
-        transition: transform .4s ease-in-out;
-    }
-    
-    .slider-btn.next:hover {
-        transform: translateX(10px);
-        transition: transform .4s ease-in-out;
-    }
+    .slider-btn.prev:hover { transform: translateX(-5px); }
+    .slider-btn.next:hover { transform: translateX(5px); }
 }
 
-/* 3. Active State (Efek saat ditekan di Mobile & Desktop) */
-/* Gunakan :active tanpa spasi */
+/* 3. Pressed State (Mobile & Desktop Click) */
+/* Kita kurangi jarak gesernya (5px) agar tidak terlalu liar di layar HP yang kecil */
 .slider-btn.is-pressed {
     color: var(--orange-color);
-    opacity: 0.7; 
+    opacity: 0.6;
 }
 
-.slider-btn.prev.is-pressed{
-    transform: translateX(-10px);
-    transition: transform .4s ease-in-out;
+.slider-btn.prev.is-pressed {
+    transform: translateX(-5px);
 }
 
 .slider-btn.next.is-pressed {
-    transform: translateX(10px);
-    transition: transform .4s ease-in-out;
+    transform: translateX(5px);
 }
 
 .main-teks h3{
