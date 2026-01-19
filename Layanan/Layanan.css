@@ -420,7 +420,7 @@ footer{
 
 .slider-btn{
     position: absolute;
-    top: 43%;
+    top: 45%;
     border-color: transparent;
     background-color: transparent;
     font-size: 30px;
@@ -1108,16 +1108,14 @@ footer{
         padding: 0 20px;
     }
 
-    .slider-btn{
-        top: 40%;
-    }
-
     .slider-btn.next{
-        right: -10%;
+        right: -9%;
+        top: 38%;
     }
 
     .slider-btn.prev{
         left: -10%;
+        top: 40%;
     }
     
     .container-gambar-judul img{
