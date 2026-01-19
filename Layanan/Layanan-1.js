@@ -385,16 +385,25 @@ function setupMobileFeedback(container) {
         if (!btn) return;
         
         if (e.type === 'touchstart') {
+            // Hapus class dari tombol lain dulu untuk memastikan kebersihan
+            document.querySelectorAll('.slider-btn').forEach(b => b.classList.remove('is-pressed'));
             btn.classList.add('is-pressed');
         } else {
-            // Beri sedikit delay 100ms agar mata sempat melihat animasinya
-            setTimeout(() => btn.classList.remove('is-pressed'), 100);
+            // Berikan delay sangat singkat agar transisi CSS sempat terlihat
+            setTimeout(() => {
+                btn.classList.remove('is-pressed');
+            }, 100);
         }
     };
 
     container.addEventListener('touchstart', handlePress, { passive: true });
     container.addEventListener('touchend', handlePress, { passive: true });
     container.addEventListener('touchcancel', handlePress, { passive: true });
+    
+    // Tambahan: Jika pengguna mulai men-swipe, hilangkan efek tekan
+    container.addEventListener('touchmove', () => {
+        document.querySelectorAll('.slider-btn').forEach(b => b.classList.remove('is-pressed'));
+    }, { passive: true });
 }
 
 // Fungsi deteksi Swipe

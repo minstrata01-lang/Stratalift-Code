@@ -429,7 +429,11 @@ footer{
 
 /* 1. Base State */
 .slider-btn {
-    /* Gunakan durasi yang lebih pendek (0.2s) agar terasa responsif */
+    padding: 20px; /* Memperbesar area sensitif sentuhan tanpa mengubah ukuran ikon */
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.2s ease-out, color 0.2s ease-out, opacity 0.2s ease-out;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -442,7 +446,8 @@ footer{
 .slider-btn.next { right: -8%; }
 
 /* 2. Hover State (Desktop Only) */
-@media (hover: hover) {
+/* Hanya jalankan hover jika menggunakan mouse presisi (Laptop/PC) */
+@media (hover: hover) and (pointer: fine) {
     .slider-btn:hover {
         color: var(--orange-color);
     }
