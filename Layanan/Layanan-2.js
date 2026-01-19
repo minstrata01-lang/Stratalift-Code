@@ -440,14 +440,20 @@ function changeSlide(direction) {
 
 function updateSliderView() {
     const imgElement = document.getElementById('slider-img');
-    if (imgElement) {
-        imgElement.style.opacity = 0.4; // Efek transisi halus
-        setTimeout(() => {
-            imgElement.src = currentImages[currentIndex];
-            imgElement.style.opacity = 1;
-        }, 150);
-    }
-    updateDots();
+    if (!imgElement) return;
+
+    // 1. Mulai transisi keluar (fade out)
+    imgElement.style.opacity = 0;
+
+    // 2. Siapkan image object sementara untuk mengecek kapan gambar baru siap
+    const tempImg = new Image();
+    tempImg.src = currentImages[currentIndex];
+
+    tempImg.onload = () => {
+        // 3. Hanya ganti src & fade in SETELAH gambar baru benar-benar siap di memori
+        imgElement.src = tempImg.src;
+        imgElement.style.opacity = 1;
+    };
 }
 
 function manualChange(direction) {
@@ -489,3 +495,17 @@ function stopAutoSlide() {
 }
 
 window.onload = renderPage;
+
+// cache gambar
+function preloadImages() {
+    currentImages.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
+// Panggil fungsi ini di window.onload atau saat data gambar diterima
+window.onload = () => {
+    renderPage();
+    preloadImages(); 
+};
