@@ -474,31 +474,23 @@ nav .drop-down-head.dropAktif .judul-nav{
 }
 
 .sapa-cta{
-    bottom: 8% !important;
-    left: 5% !important;
-    width: auto !important;
+    bottom: 12% !important;
+    left: 22% !important;
+    transform: translateX(-50%);
+    width: max-content !important;
     gap: 0;
-}
-
-.sapa-label{
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    margin: 0 0 12px 0;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.85);
-    letter-spacing: 0.5px;
 }
 
 .sapa-slide a.sapa-btn{
     display: inline-block;
     background: linear-gradient(135deg, #CF862A 0%, #F5B942 100%);
     color: #fff !important;
-    font-size: 15px !important;
+    font-size: 22px !important;
     font-weight: 700;
-    padding: 11px 26px;
-    border-radius: 6px;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+    padding: 16px 48px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.45);
     transition: all 400ms ease !important;
     margin-left: 0 !important;
     text-transform: uppercase;
@@ -506,11 +498,12 @@ nav .drop-down-head.dropAktif .judul-nav{
     text-decoration: none !important;
     width: max-content !important;
     scale: 1 !important;
+    white-space: nowrap;
 }
 
 .sapa-slide a.sapa-btn:hover{
     background: linear-gradient(135deg, #F5B942 0%, #CF862A 100%);
-    box-shadow: 0 6px 24px rgba(207,134,42,0.6);
+    box-shadow: 0 8px 30px rgba(207,134,42,0.65);
     scale: 1.06 !important;
     color: #fff !important;
     text-decoration: none !important;
@@ -1219,13 +1212,9 @@ footer{
         z-index: 100;
     }
 
-    .sapa-label{
-        font-size: 14px;
-    }
-
     .sapa-slide a.sapa-btn{
-        font-size: 13px !important;
-        padding: 9px 18px;
+        font-size: 15px !important;
+        padding: 12px 28px;
     }
 
     .hero-section .left h1{
@@ -1292,10 +1281,6 @@ footer{
     .gambar-container h2{
         font-size: 27px ;
         width: 200px;
-    }
-
-    .sapa-label{
-        font-size: 12px;
     }
 
     .sapa-slide a.sapa-btn{
