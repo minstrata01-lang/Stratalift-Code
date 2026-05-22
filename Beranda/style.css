@@ -469,16 +469,41 @@ nav .drop-down-head.dropAktif .judul-nav{
 }
 
 /* SA.PA slide */
+@keyframes sapa-pan {
+    0%   { object-position: 0% center; }
+    100% { object-position: 100% center; }
+}
+
+.sapa-slide{
+    background: linear-gradient(160deg, #07192e 0%, #0F2C4C 55%, #13406e 100%);
+}
+
 .sapa-slide .gambar{
     filter: brightness(100%);
+    object-fit: cover;
+    object-position: 0% center;
+    animation: sapa-pan 8s ease-in-out infinite alternate;
+}
+
+.sapa-slide::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background: linear-gradient(to top, rgba(7,25,46,0.75) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .sapa-cta{
-    bottom: 12% !important;
+    bottom: 80px !important;
     left: 22% !important;
     transform: translateX(-50%);
     width: max-content !important;
     gap: 0;
+    z-index: 2;
 }
 
 .sapa-slide a.sapa-btn{
@@ -807,6 +832,18 @@ footer{
     .isi-sub-menu li {
     width: 100%;
     }
+
+    /* SA.PA slide - tablet */
+    .sapa-cta{
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        bottom: 80px !important;
+    }
+
+    .sapa-slide a.sapa-btn{
+        font-size: 18px !important;
+        padding: 14px 36px;
+    }
 }
 
 @media(max-width: 800px){
@@ -1047,6 +1084,41 @@ footer{
         transition: max-height .4s all ease-in-out;
     }
 
+    /* hero slider mobile */
+    .picture-beranda,
+    .picture-beranda .hero-picture {
+        height: calc(100svh - 145px);
+    }
+
+    .gambar-container .text-gambar-container {
+        left: 8%;
+        width: 75%;
+        bottom: 22%;
+    }
+
+    .gambar-container h2 {
+        font-size: 42px;
+        width: auto;
+        margin: 16px 0;
+    }
+
+    .panah button {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .sapa-cta {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        bottom: 80px !important;
+    }
+
+    .sapa-slide a.sapa-btn {
+        font-size: 15px !important;
+        padding: 12px 28px;
+        white-space: nowrap;
+    }
+
     /* CONTAINER UTAMA (Pintu Luar) */
     .mobile-menu-container {
         width: 100%;
@@ -1199,22 +1271,29 @@ footer{
     }
 
     .gambar-container .text-gambar-container{
-        bottom: 20%;
+        left: 8%;
+        width: 84%;
+        bottom: 18%;
     }
 
     .gambar-container h2{
-        font-size: 30px ;
-        width: 300px;
+        font-size: 26px;
+        width: auto;
+        margin: 10px 0;
     }
 
     .gambar-container a{
-        font-size: 16px;
+        font-size: 15px;
         z-index: 100;
     }
 
+    .sapa-cta {
+        bottom: 78px !important;
+    }
+
     .sapa-slide a.sapa-btn{
-        font-size: 15px !important;
-        padding: 12px 28px;
+        font-size: 12px !important;
+        padding: 9px 18px;
     }
 
     .hero-section .left h1{
@@ -1279,8 +1358,9 @@ footer{
     }
 
     .gambar-container h2{
-        font-size: 27px ;
-        width: 200px;
+        font-size: 22px;
+        width: auto;
+        margin: 8px 0;
     }
 
     .sapa-slide a.sapa-btn{
