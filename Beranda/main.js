@@ -39,7 +39,9 @@ let next = document.querySelector('#next');
 let active = 0;
 let lengthItem = items.length - 1;
 
-let refreshSlider = setInterval(() => { next.click() }, 5000);
+function getSlideInterval() { return active === 0 ? 8000 : 5000; }
+
+let refreshSlider = setInterval(() => { next.click() }, getSlideInterval());
 
 function reloadSlider() {
     let checkLeft = items[active].offsetLeft;
@@ -50,9 +52,9 @@ function reloadSlider() {
 
     document.querySelector('.gambar-container.aktif')?.classList.remove('aktif');
     items[active].classList.add('aktif');
-    
+
     clearInterval(refreshSlider);
-    refreshSlider = setInterval(() => { next.click() }, 5000);
+    refreshSlider = setInterval(() => { next.click() }, getSlideInterval());
 }
 
 next.onclick = function() {
